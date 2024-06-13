@@ -1,5 +1,8 @@
 :root{
     --color--principal: #fff;
+    --color--secundario: #06A77D;
+    --color--terciario: #D5C67A;
+    --color--negro: #000;
     --color--transparente: rgba(0,0,0,0.0);
 }
 
@@ -29,10 +32,12 @@ body{
     height: 100vh;
 
     /*Fondo de pantalla*/
+
+    background-color: var(--color--negro);
     background-image: url(/imagenes/image-disco.webp);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position:50% 20%;
+    background-size:300px;
 }
 
 .contenido__label,
@@ -64,10 +69,12 @@ body{
 }
 
 .contenido__input--login{
+    /*Estilos del boton de Iniciar Sesión*/
     border-color: var(--color--principal);
     border-width: 2.5px;
     border-style: double;
 
+    /*Fondo transparente del boton*/
     background-color: var(--color--transparente);
     
 }
