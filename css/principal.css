@@ -1,0 +1,57 @@
+:root{
+
+    /*Variables basicas de uso*/
+    --color--principal: #fff;
+    --color--secundario: #06A77D;
+    --color--terciario: #D5C67A;
+    --color--negro: #000;
+    --color--transparente: rgba(0,0,0,0.0);
+}
+
+/*Declaración de la fuente*/
+@font-face{
+    font-family: 'heyWow';
+    src: url(/heywow/HeyWowMedium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    /*Se elimina el margin basico de los elementos*/
+    margin: 0;
+
+    /*Aplicamos la fuente anteriormente declarada*/
+    font-family: 'heyWow';
+}
+
+.cabecera{
+    /*Estilos cabecera*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*Tamaño de la cabecera*/
+    width: 100vw;
+    height: 10%;
+}
+
+.cabecera__imagen{
+    /*Tamaño de los iconos*/
+    height: 40px;
+}
+
+
+
+/*Estilos elementos especificos*/
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:active  {
+    color: var(--color--negro);
+}
