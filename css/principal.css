@@ -26,6 +26,10 @@ body{
     font-family: 'heyWow';
 }
 
+.cabecera{
+    padding-top: 1vh;
+}
+
 .cabecera,
 .base{
     /*Estilos cabecera-base*/
@@ -106,34 +110,20 @@ body{
     color: var(--color--terciario);
 }
 
-/*Estilos elementos especificos*/
-
-a{
-    outline: none;
-    text-decoration: none;
-}
-
-a:link,
-a:visited,
-a:focus,
-a:active  {
-    color: var(--color--negro);
-}
-
 
 /*Estilos del Modal o PopUp*/
 
 /* El Modal (oculto por defecto) */
 .modal {
-    display: none; 
+    display: none;
     position: fixed; 
     z-index: 1; 
-    padding-top: 60px; 
+    padding-top: 15vh;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100vw; 
     height: 100%; 
-    overflow: auto; 
+    overflow:auto; 
     background-color: var(--color--transparente); 
     backdrop-filter: blur(10px);
 }
@@ -154,7 +144,7 @@ a:active  {
 
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3vh 8vh 8vh 8vh 8vh 8vh;
     align-items: center;
     justify-items: end;
 }
@@ -167,7 +157,6 @@ a:active  {
 
 /* Botón para cerrar */
 .close {
-    background-color: var(--color--principal);
     width: 27%;
     height: 30px;
     color: var(--color--negro);
@@ -218,6 +207,8 @@ a:active  {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    padding: 1vh 0;
 }
 
 .modal__perfil--imagen{
@@ -225,4 +216,18 @@ a:active  {
     height: 40px;
 
     border-radius: 40px;
+}
+
+/*Estilos elementos especificos*/
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:active  {
+    color: var(--color--negro);
 }
