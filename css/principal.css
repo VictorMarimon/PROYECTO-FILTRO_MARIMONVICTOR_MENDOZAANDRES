@@ -7,6 +7,7 @@
     --color--negro: #000;
     --color--gris: rgb(85, 79, 79);
     --color--transparente: rgba(0,0,0,0.0);
+    --color--opaco: rgba(0,0,0,0.4);
 }
 
 /*Declaración de la fuente*/
@@ -42,16 +43,17 @@ body{
     /*Tamaño de los iconos*/
     height: 40px;
 }
-/*
+
 .base{
     display: flex;
     background-color: var(--color--principal);
     width: 100vw;
-    height: 9vh;
+    height: auto;
+
+    /*Estilo de posición fija del footer*/
     position: fixed;
-    top: 200vw;
-    z-index: 1;
-}*/
+    bottom: 0;
+}
 
 .base__enlace{
     /*Estilo de cada icono del footer*/
@@ -81,6 +83,8 @@ body{
     grid-template-columns: auto auto ;
     row-gap: 9px;
     column-gap: 9px;
+
+    margin-bottom: 20%;
 }
 
 .contenido__sección{
@@ -114,4 +118,111 @@ a:visited,
 a:focus,
 a:active  {
     color: var(--color--negro);
+}
+
+
+/*Estilos del Modal o PopUp*/
+
+/* El Modal (oculto por defecto) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: var(--color--transparente); 
+    backdrop-filter: blur(10px);
+}
+
+/* Mostrar el modal cuando se selecciona */
+.modal:target {
+    display: block;
+}
+
+/* Contenido del Modal */
+.modal__contenido {
+    background-color: var(--color--transparente); 
+    backdrop-filter: blur(10px);
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    animation: modalopen 0.4s; /* Animación */
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+}
+
+/* Animación para abrir el modal */
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* Botón para cerrar */
+.close {
+    background-color: var(--color--principal);
+    width: 27%;
+    height: 30px;
+    color: var(--color--negro);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+
+    grid-column: 2/3;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--color--negro);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Imagen dentro del modal */
+.modal__image {
+    background-color: var(--color--principal);
+    width: 100%;
+    border-radius: 20px;
+
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
+
+/*Estilos de los logos*/
+.modal__logo{
+    background-color: var(--color--principal);
+    border-radius: 12px;
+
+    width: 48px;
+    height: 48px;
+
+    grid-column: 2/3;
+}
+
+.modal__perfil{
+    background-color: var(--color--principal);
+    border-radius: 8px;
+
+    width: 80vw;
+
+    grid-column: 1/3;
+    grid-row: 6/7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal__perfil--imagen{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 40px;
 }
