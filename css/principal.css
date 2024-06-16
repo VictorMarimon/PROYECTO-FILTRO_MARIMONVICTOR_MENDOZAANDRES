@@ -144,7 +144,7 @@ body{
 
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 3vh 8vh 8vh 8vh 8vh 8vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 15vh;
     align-items: center;
     justify-items: end;
 }
