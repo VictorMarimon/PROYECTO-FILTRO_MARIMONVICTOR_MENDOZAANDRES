@@ -68,6 +68,12 @@ body{
     /*Tamaño*/
     width: 100vw;
     height: 7vh;
+    
+    color: var(--color--negro);
+}
+
+.navegación__enlace--activado{
+    font-weight: 1000;
 }
 
 .cabecera,
@@ -135,7 +141,8 @@ body{
 
 .contenido__seccion__tienda__imagen{
     border-radius: 19px;
-    width: 50vw;
+    width: 200px;
+    height: 120px;
 }
 
 .contenido__seccion__tienda__parrafo{
@@ -144,9 +151,7 @@ body{
 }
 
 .contenido__seccion__cartas{
-    position: absolute;
     width: 100vw;
-    height: 200px;
 }
 
 .contenido__seccion--principal{
@@ -156,40 +161,14 @@ body{
     flex-direction: column;
 }
 
-.contenido__seccion--imagen1{
-    width: 80vw;
-    height: 20vh;
-    top: 26vh;
-    left: 10vw;
-    background-color: red;
-    z-index: 1;
-    border-radius: 25px;
-}
-
-.contenido__seccion--imagen2{
-    width: 88vw;
-    height: 20vh;
-    top: 23vh;
-    left: 6vw;
-    background-color: blue;
-    z-index: 2;
-    border-radius: 25px;
-}
-
-.contenido__seccion--imagen3{
-    width: 96vw;
-    height: 20vh;
-    top: 20vh;
-    left: 2vw;
-    background-color: green;
-    z-index: 3;
-    border-radius: 25px;
-}
-
 .contenido__seccion__tienda__imagen--colecciones{
     border-radius: 19px;
-    width: 35vw;
-    height: 20vh;
+    width: 150px;
+    height: 140px;
+}
+
+.contenido__seccion--texto{
+    color: var(--color--gris);
 }
 
 .contenido__seccion__tienda--individual{
@@ -197,7 +176,6 @@ body{
 }
 
 .contenido__seccion__tienda--etiquetas{
-    background-color: var(--color--secundario);
     margin: 0 6px;
     display: flex;
     flex-direction: column;
@@ -206,7 +184,12 @@ body{
 }
 
 .contenido__seccion__tienda__imagen--etiquetas{
-    width: 49vw;
+    width: 200px;
+    height: 200px;
+}
+
+.contenido__seccion__tienda__parrafo{
+    font-weight: 700;
 }
 
 /*Estilos elementos especificos*/
