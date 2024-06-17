@@ -96,6 +96,11 @@ body{
 .contenido__seccion--imagen{
     border-radius: 20px;
     width: 40vw;
+    height: 20vh;
+}
+
+.contenido__seccion--cantidad{
+    color: var(--color--gris);
 }
 
 .cabecera,
