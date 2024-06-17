@@ -18,14 +18,63 @@
     
     <section class="busqueda">
         <h4 class="busqueda__texto">Buscar <img class="busqueda__imagen" src="/imagenes/search-2.png" alt="imagen de busqueda"></h4>
-        <a href="#"><img class="busqueda__imagen busqueda__imagen--opciones" src="/imagenes/adjustments.png" alt="imagen de opciones"></a>
+        <a href="#bottomSheet--ajustes"><img class="busqueda__imagen busqueda__imagen--opciones" src="/imagenes/adjustments.png" alt="imagen de opciones"></a>
         <a href="#"><img class="busqueda__imagen busqueda__imagen--opciones" src="/imagenes/plus.png" alt="logo de signo mas"></a>
+        <div class="contenido__bottomsheet" id="bottomSheet--ajustes">
+            <div class="contenido__bottomsheet__objeto">
+                <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
+                <h2>Ajustes</h2>
+                <p>Ordenar</p>
+                <div class="contenido__bottomsheet__objeto__orden">
+                    <p class="contenido__bottomsheet__objeto__orden--activo">Último guardado <img class="contenido__bottomsheet__objeto__orden--imagen" src="/imagenes/circle-dot.png" alt="logo de circulo seleccionado"></p>
+                    <p class="contenido__bottomsheet__objeto__orden--desactivo">Alfabéticamente <img class="contenido__bottomsheet__objeto__orden--imagen" src="/imagenes/circle.png" alt="logo de circulo"></p>
+                </div>
+                <hr>
+                <p>Disposición</p>
+                <div class="contenido__bottomsheet__objeto__disposición">
+                    <img class="contenido__bottomsheet__objeto__disposición--imagen contenido__bottomsheet__objeto__disposición--imagenactiva" src="/imagenes/layout-list.png" alt="logo de lista">
+                    <img class="contenido__bottomsheet__objeto__disposición--imagen" src="/imagenes/layout-grid.png" alt="logo de grid">
+                    <img class="contenido__bottomsheet__objeto__disposición--imagen" src="/imagenes/grid-dots.png" alt="logo de dots">
+                </div>
+                
+            </div>
+        </div>
     </section>
 
     <main class="contenido">
         <div class="contenido__seccion">
-            <p class="contenido__seccion--titulo">Rock <br> <span class="contenido__seccion--cantidad" >12 vinilos</span></p>
-            <img class="contenido__seccion--imagen" src="/imagenes/imagen-rock.jpg" alt="imagen de vinilo alucivo al rock">
+            <p class="contenido__seccion--titulo">Rock <br> <span class="contenido__seccion--cantidad" >6 vinilos</span></p>
+            <a href="#bottomSheet--rock" class="contenido__bottomsheet__objeto--abrir"><img class="contenido__seccion--imagen" src="/imagenes/imagen-rock.jpg" alt="imagen de vinilo alucivo al rock"></a> 
+        </div>
+        <div class="contenido__bottomsheet" id="bottomSheet--rock">
+            <div class="contenido__bottomsheet__objeto">
+                <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
+                <h2>Vinilos Rock</h2>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/rolling-stones.webp" alt="logo de rolling stones">
+                    <p>ROLLING STONES - HEART LOVE</p>
+                </div>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/vinilo-beatles.jpg" alt="vinilo de los beatles">
+                    <p>The Beatles – Abbey Road</p>
+                </div>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/vinilo-nirvana.webp" alt="vinilo de nirvana">
+                    <p>Nirvana – Nevermind</p>
+                </div>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/vinilo-queen.webp" alt="vinilo de queen">
+                    <p>Queen – A Night At The Opera</p>
+                </div>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/vinilo leppard.webp" alt="vinilo de leppard">
+                    <p>Def Leppard – The Story So Far</p>
+                </div>
+                <div class="contenido__bottomsheet__objeto__vinilo">
+                    <img class="contenido__bottomsheet__objeto__vinilo--imagen" src="/imagenes/vinilo-queen-2.webp" alt="vinilo de queen">
+                    <p>Queen – A Kind Of Magic</p>
+                </div>
+            </div>
         </div>
         <div class="contenido__seccion">
             <p class="contenido__seccion--titulo">Salsa <br> <span class="contenido__seccion--cantidad" >32 vinilos</span></p>
@@ -58,5 +107,10 @@
         <a class="base__enlace" href="/html/tienda.html"><img class="base__imagen" src="/imagenes/store.png" alt="imagen de la tienda">Tienda</a>
         <a class="base__enlace" href="/html/usuario.html"><img class="base__imagen" src="/imagenes/user-2.png" alt="imagen de usuario">Perfil</a>
     </footer>
+
+    <div class="mensaje_nodisponible">
+        <p>PÁGINA NO DISPONIBLE EN COMPUTADOR (SE RECOMIENDA UTILIZAR MOVIL)</p> 
+        <img class="mensaje_nodisponible--imagen" src="/imagenes/diseño-movil.jpeg" alt="imagen del diseño movil">
+    </div>
 </body>
 </html>

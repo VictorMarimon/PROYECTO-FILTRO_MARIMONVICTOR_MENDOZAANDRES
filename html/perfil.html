@@ -18,8 +18,49 @@
             <p class="cabecera__datos--usuario">@victor_07</p>
         </section>
         <nav class="cabecera__social">
-            <a class="cabecera__social--seguidos" href="#">20 Seguidos</a>
-            <a href="#"><img class="cabecera__social--imagen" src="/imagenes/settings.png" alt="logo de configuración"></a>
+            <a class="cabecera__social--seguidos" href="#bottomSheet--seguidos">20 Seguidos</a>
+            <a href="#bottomSheet--cuenta"><img class="cabecera__social--imagen" src="/imagenes/settings.png" alt="logo de configuración"></a>
+            <div class="contenido__bottomsheet" id="bottomSheet--seguidos">
+                <div class="contenido__bottomsheet__objeto">
+                    <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
+                    <h2>Seguidos</h2>
+                    <div class="contenido__bottomsheet__objeto__seguido">
+                        <img class="contenido__bottomsheet__objeto__seguido--imagen" src="/imagenes/imagen-rock.jpg" alt="logo de rock">
+                        <p>Rock <br> <span class="contenido__bottomsheet__objeto__seguido--texto">Etiqueta</span></p>
+                        <h6 class="contenido__bottomsheet__objeto__seguido--unfollow">Dejar de seguir</h6>
+                    </div>   
+                    <div class="contenido__bottomsheet__objeto__seguido">
+                        <img class="contenido__bottomsheet__objeto__seguido--imagen" src="/imagenes/codiscos.jpg" alt="logo de codiscos">
+                        <p>Codiscos <br> <span class="contenido__bottomsheet__objeto__seguido--texto">Tienda</span></p>
+                        <h6 class="contenido__bottomsheet__objeto__seguido--unfollow">Dejar de seguir</h6>
+                    </div> 
+                    <div class="contenido__bottomsheet__objeto__seguido">
+                        <img class="contenido__bottomsheet__objeto__seguido--imagen" src="/imagenes/shakira-2.jpg" alt="">
+                        <p>Shakira <br> <span class="contenido__bottomsheet__objeto__seguido--texto">Artista</span></p>
+                        <h6 class="contenido__bottomsheet__objeto__seguido--unfollow">Dejar de seguir</h6>
+                    </div> 
+                    <div class="contenido__bottomsheet__objeto__seguido">
+                        <img class="contenido__bottomsheet__objeto__seguido--imagen" src="/imagenes/imagen-salsa.jpg" alt="">
+                        <p>Salsa <br> <span class="contenido__bottomsheet__objeto__seguido--texto">Etiqueta</span></p>
+                        <h6 class="contenido__bottomsheet__objeto__seguido--unfollow">Dejar de seguir</h6>
+                    </div>                  
+                </div>
+            </div>
+            <div class="contenido__bottomsheet" id="bottomSheet--cuenta">
+                <div class="contenido__bottomsheet__objeto">
+                    <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
+                    <h2>Cuenta</h2>  
+                    <div class="contenido__bottomsheet__objeto__datos">
+                        <p class="contenido__bottomsheet__objeto__datos--texto">Cambiar nombre <img class="contenido__bottomsheet__objeto__dato--foto" src="/imagenes/signature.png" alt="logo de firma"></p>
+                        <p class="contenido__bottomsheet__objeto__datos--texto">Cambiar foto <img class="contenido__bottomsheet__objeto__dato--foto" src="/imagenes/photo.png" alt="logo de foto"></p>
+                    </div>  
+                    <hr>
+                    <br>
+                    <div class="contenido__bottomsheet__objeto__sesion">
+                        <a class="contenido__bottomsheet__objeto__sesion--texto" href="/index.html">Cerrar Sesión</a>
+                    </div>          
+                </div>
+            </div>
         </nav>
         <hr>
     </header>
@@ -70,5 +111,10 @@
         </section>
         <hr>
     </main>
+    
+    <div class="mensaje_nodisponible">
+        <p>PÁGINA NO DISPONIBLE EN COMPUTADOR (SE RECOMIENDA UTILIZAR MOVIL)</p> 
+        <img class="mensaje_nodisponible--imagen" src="/imagenes/diseño-movil.jpeg" alt="imagen del diseño movil">
+    </div>
 </body>
 </html>
