@@ -164,6 +164,103 @@ body{
     color: var(--color--gris);
 }
 
+/*Estilo bottomsheet*/
+
+.contenido__bottomsheet__objeto--cerrar, 
+.contenido__bottomsheet__objeto--abrir {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contenido__bottomsheet {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s ease-in-out;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.contenido__bottomsheet__objeto {
+    padding: 20px;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.contenido__bottomsheet h2 {
+    margin-top: 0;
+}
+
+.contenido__bottomsheet__objeto--cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contenido__bottomsheet__objeto__seguido{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenido__bottomsheet__objeto__seguido--imagen{
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 1vw;
+}
+
+.contenido__bottomsheet__objeto__seguido--texto{
+    color: var(--color--gris--claro);
+}
+
+.contenido__bottomsheet__objeto__seguido--unfollow{
+    cursor: pointer;
+    border: solid 2px;
+    border-color: var(--color--gris);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.contenido__bottomsheet__objeto__datos--texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color--gris--claro);
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 2vw;
+}
+
+.contenido__bottomsheet__objeto__dato--foto{
+    width: 40px;
+    padding-right: 2vw;
+}
+
+.contenido__bottomsheet__objeto__sesion--texto{
+    background-color: var(--color--terciario);
+    border-radius: 10px;
+    padding: 8px;
+    color: var(--color--secundario);
+}
+
+/* Mostrar bottom sheet cuando es el objetivo */
+:target {
+    bottom: 0;
+}
+
 /*Estilos elementos especificos*/
 
 a{
@@ -176,4 +273,33 @@ a:visited,
 a:focus,
 a:active  {
     color: var(--color--negro);
+}
+
+/* Estilos base para el mensaje */
+.mensaje_nodisponible {
+    display: none; /* Ocultar el mensaje por defecto */
+    width: 100vw;
+    height: 80vh;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color--gris--claro);
+    color: var(--color--negro);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar el mensaje solo en pantallas con ancho mayor a 500px */
+@media screen and (min-width: 500px) {
+    .mensaje_nodisponible {
+        display: block; /* Mostrar el mensaje cuando se cumple la condición */
+    }
+    .mensaje_nodisponible--imagen{
+        height: 70vh;
+    }
 }

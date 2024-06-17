@@ -6,6 +6,7 @@
     --color--terciario: #D5C67A;
     --color--negro: #000;
     --color--gris: rgb(85, 79, 79);
+    --color--gris--claro: rgb(214, 211, 211);
     --color--transparente: rgba(0,0,0,0.0);
     --color--opaco: rgba(0,0,0,0.4);
 }
@@ -244,4 +245,33 @@ a:visited,
 a:focus,
 a:active  {
     color: var(--color--negro);
+}
+
+/* Estilos base para el mensaje */
+.mensaje_nodisponible {
+    display: none; /* Ocultar el mensaje por defecto */
+    width: 100vw;
+    height: 80vh;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color--gris--claro);
+    color: var(--color--negro);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar el mensaje solo en pantallas con ancho mayor a 500px */
+@media screen and (min-width: 500px) {
+    .mensaje_nodisponible {
+        display: block; /* Mostrar el mensaje cuando se cumple la condición */
+    }
+    .mensaje_nodisponible--imagen{
+        height: 70vh;
+    }
 }
