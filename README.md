@@ -31,11 +31,17 @@ Estructura del proyecto
 
 PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/
 │
+
 ├── css 
+
 ├── heywow
+
 ├── html
+
 ├── imagenes
+
 └── index.html
+
 
 css: Carpeta que contiene todo los diseños css.
 heywow: Carpeta que contiene la tipografia del proyecto.
@@ -46,6 +52,14 @@ index.html: Contiene la pagina principal del sitio web.
 Mockup de la pagina
 
 ![iPhone 14 Pro Max-1718648049152](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/edad0495-28b8-42bc-abed-83dde3ca0523)
+---------------------------------------------------------------------------------------
+![iPhone 14 Pro Max-1718648221491](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/f6f36739-bcce-4c32-9b74-b3ea960ed1f5)
+---------------------------------------------------------------------------------------
+![iPhone 14 Pro Max-1718648243261](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/426940be-b1cb-4634-89f6-95b0ac210bbe)
+---------------------------------------------------------------------------------------
+![iPhone 14 Pro Max-1718648257825](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/11714a58-ddd1-4588-ab1c-cbea56ae435d)
+---------------------------------------------------------------------------------------
+![iPhone 14 Pro Max-1718648276593](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/7a310542-81b8-4fbc-b795-3e286728519b)
 
 
 ¡Gracias por visitar este proyecto!
