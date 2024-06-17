@@ -82,6 +82,10 @@ body{
     height: 8vh;
 }
 
+.navegación__enlace--activado{
+    font-weight: 1000;
+}
+
 .contenido{
     display: grid;
     grid-template-columns: auto auto ;
@@ -113,7 +117,6 @@ body{
 
 /*Estilos del Modal o PopUp*/
 
-/* El Modal (oculto por defecto) */
 .modal {
     display: none;
     position: fixed; 
@@ -128,19 +131,19 @@ body{
     backdrop-filter: blur(10px);
 }
 
-/* Mostrar el modal cuando se selecciona */
+/*Mostrar el modal cuando se selecciona*/
 .modal:target {
     display: block;
 }
 
-/* Contenido del Modal */
+/*Contenido del modal*/
 .modal__contenido {
     background-color: var(--color--transparente); 
     backdrop-filter: blur(10px);
     margin: auto;
     padding: 20px;
     width: 80%;
-    animation: modalopen 0.4s; /* Animación */
+    animation: modalopen 0.4s; /*Animación*/
 
     display: grid;
     grid-template-columns: 80% 20%;
@@ -149,13 +152,13 @@ body{
     justify-items: end;
 }
 
-/* Animación para abrir el modal */
+/*Animación para abrir el modal */
 @keyframes modalopen {
     from {opacity: 0}
     to {opacity: 1}
 }
 
-/* Botón para cerrar */
+/*Botón para cerrar */
 .close {
     width: 27%;
     height: 30px;
@@ -216,6 +219,17 @@ body{
     height: 40px;
 
     border-radius: 40px;
+}
+
+.modal__logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal__logo:hover {
+    background-color: var(--color--secundario);
+    
+    /*Aumenta el tamaño del logo al 120%*/
+    transform: scale(1.2); 
 }
 
 /*Estilos elementos especificos*/
