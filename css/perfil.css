@@ -104,6 +104,7 @@ body{
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    color: var(--color--gris);
 }
 
 .contenido__preferencias--viniloid,
@@ -115,6 +116,10 @@ body{
     border-color: var(--color--gris--claro);
     border-radius: 10px;
     padding: 1vh 3vw;
+}
+
+.contenido__preferencias--texto{
+    font-weight: 900;
 }
 
 .contenido__pago__tarjetas{
@@ -152,6 +157,11 @@ body{
 .contenido__dirección--enlace{
     text-align: center;
     width: 40vw;
+}
+
+.contenido__dirección--texto{
+    margin: 5px 0;
+    color: var(--color--gris);
 }
 
 /*Estilos elementos especificos*/
