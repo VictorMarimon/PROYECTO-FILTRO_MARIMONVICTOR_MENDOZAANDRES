@@ -9,14 +9,14 @@
 
 # Proyecto de Página Web Móvil de Compras Online
 
-Este repositorio contiene el código fuente de un sitio web de compras online diseñado exclusivamente para dispositivos móviles, utilizando **HTML** y **CSS**. La temática del sitio es de vinilos y se enfoca en proporcionar una experiencia de usuario fluida y responsiva en **dispositivos móviles**.
+Este repositorio contiene el código fuente de un sitio web de compras online diseñado exclusivamente para dispositivos móviles, utilizando **HTML** y **CSS**. La temática del sitio es de vinilos y se enfoca en proporcionar una experiencia de usuario fluida y responsiva en **dispositivos móviles** :iphone:.
 
 El diseño es específico para móviles. En resoluciones de escritorio, el sitio mostrará un mensaje indicando que la vista no está disponible para esa resolución.
 
 
 # CONTENIDO
 
-El proyecto se compone de cuatro carpetas, la primera es css donde se encontrarán todos los archivos **css** de la pagina, la segunda **HeyWow** donde se localiza la tipografía del proyecto, en la tercera la carpeta llamada **html** se ubica toda la estructura html de la pagina web y en la cuarta llamada imágenes donde se halla todo el **contenido visual (imágenes)**, ademas del archivo principal **index.html**.
+:card_file_box: El proyecto se compone de cuatro carpetas, la primera es css donde se encontrarán todos los archivos **css** de la pagina, la segunda **HeyWow** donde se localiza la tipografía del proyecto, en la tercera la carpeta llamada **html** se ubica toda la estructura html de la pagina web y en la cuarta llamada imágenes donde se halla todo el **contenido visual (imágenes)**, ademas del archivo principal **index.html**.
 
 ├── css 
 
@@ -66,9 +66,9 @@ Mensaje claro cuando el sitio es accedido desde una resolución de **escritorio*
 
 ## USO
 
-*Navegación en Móvil*: Accede al sitio desde un **dispositivo móvil** para una experiencia optimizada => https://proyectocampus.netlify.app/
+*Navegación en Móvil* :white_check_mark:: Accede al sitio desde un **dispositivo móvil** para una experiencia optimizada => https://proyectocampus.netlify.app/
 
-*Vista en Escritorio*: Al acceder desde una **resolución de escritorio**, verás un mensaje indicando la disponibilidad solo en móvil.
+*Vista en Escritorio* :white_check_mark:: Al acceder desde una **resolución de escritorio**, verás un mensaje indicando la disponibilidad solo en móvil.
 
 ## MOCKUP
 
@@ -79,6 +79,6 @@ Mensaje claro cuando el sitio es accedido desde una resolución de **escritorio*
 
 ## AUTOR
 
-Victor Andres Marimon Mendoza **Camper**
+:technologist: Victor Andres Marimon Mendoza **Camper**
 
 ¡Gracias por visitar este proyecto!
