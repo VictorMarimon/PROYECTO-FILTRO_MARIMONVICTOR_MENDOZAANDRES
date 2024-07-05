@@ -2,9 +2,9 @@
 
 - [Contenido](#CONTENIDO)
 - [Demo](#Demo)
-- [USO:](#USO:)
+- [USO:](#USO)
 - [MOCKUP](#MOCKUP)
-- [AUTOR:](#AUTOR:)
+- [AUTOR:](#AUTOR)
 
 
 # Proyecto de Página Web Móvil de Compras Online
