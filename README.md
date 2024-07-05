@@ -4,6 +4,8 @@ Este repositorio contiene el código fuente de un sitio web de compras online di
 
 El diseño es específico para móviles. En resoluciones de escritorio, el sitio mostrará un mensaje indicando que la vista no está disponible para esa resolución.
 
+- [Contenido](#CONTENIDO)
+
 
 # CONTENIDO:
 
