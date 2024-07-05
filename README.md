@@ -1,10 +1,17 @@
+# TABLA DE CONTENIDO
+
+- [Contenido](#CONTENIDO)
+- [Demo](#Demo)
+- [USO:](#USO:)
+- [MOCKUP](#MOCKUP)
+- [AUTOR:](#AUTOR:)
+
+
 # Proyecto de Página Web Móvil de Compras Online
 
 Este repositorio contiene el código fuente de un sitio web de compras online diseñado exclusivamente para dispositivos móviles, utilizando **HTML** y **CSS**. La temática del sitio es de vinilos y se enfoca en proporcionar una experiencia de usuario fluida y responsiva en **dispositivos móviles**.
 
 El diseño es específico para móviles. En resoluciones de escritorio, el sitio mostrará un mensaje indicando que la vista no está disponible para esa resolución.
-
-- [Contenido](#CONTENIDO)
 
 
 # CONTENIDO:
