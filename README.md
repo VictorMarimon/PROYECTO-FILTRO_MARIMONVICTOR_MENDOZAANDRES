@@ -1,10 +1,10 @@
 # TABLA DE CONTENIDO
 
 - [Contenido](#CONTENIDO)
-- [Demo](#Demo)
-- [USO:](#USO)
-- [MOCKUP](#MOCKUP)
-- [AUTOR:](#AUTOR)
+- [Demo](#DEMO)
+- [Uso](#USO)
+- [Mockup](#MOCKUP)
+- [Autor](#AUTOR)
 
 
 # Proyecto de Página Web Móvil de Compras Online
@@ -14,7 +14,7 @@ Este repositorio contiene el código fuente de un sitio web de compras online di
 El diseño es específico para móviles. En resoluciones de escritorio, el sitio mostrará un mensaje indicando que la vista no está disponible para esa resolución.
 
 
-# CONTENIDO:
+# CONTENIDO
 
 El proyecto se compone de cuatro carpetas, la primera es css donde se encontrarán todos los archivos **css** de la pagina, la segunda **HeyWow** donde se localiza la tipografía del proyecto, en la tercera la carpeta llamada **html** se ubica toda la estructura html de la pagina web y en la cuarta llamada imágenes donde se halla todo el **contenido visual (imágenes)**, ademas del archivo principal **index.html**.
 
@@ -46,7 +46,7 @@ El proyecto se compone de cuatro carpetas, la primera es css donde se encontrar�
 
 └── index.html
 
-## Demo
+## DEMO
 
 
 *Diseño Responsivo*: 
@@ -64,7 +64,7 @@ Todo el contenido es redactado desde cero, asegurando originalidad y claridad.
 *Indicador de Disponibilidad para Escritorio*: 
 Mensaje claro cuando el sitio es accedido desde una resolución de **escritorio**.
 
-## USO:
+## USO
 
 *Navegación en Móvil*: Accede al sitio desde un **dispositivo móvil** para una experiencia optimizada => https://proyectocampus.netlify.app/
 
@@ -77,7 +77,7 @@ Mensaje claro cuando el sitio es accedido desde una resolución de **escritorio*
 | ![iPhone 14 Pro Max-1718648243261](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/426940be-b1cb-4634-89f6-95b0ac210bbe) | ![iPhone 14 Pro Max-1718648257825](https://github.com/VictorMarimon/PROYECTO-FILTRO_MARIMONVICTOR_MENDOZAANDRES/assets/101603931/11714a58-ddd1-4588-ab1c-cbea56ae435d) |
 
 
-## AUTOR:
+## AUTOR
 
 Victor Andres Marimon Mendoza **Camper**
 
