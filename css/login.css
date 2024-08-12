@@ -81,6 +81,8 @@ body{
 
     /*Fondo transparente del boton*/
     background-color: var(--color--transparente);
+
+    color: var(--color--principal);
     
 }
 
