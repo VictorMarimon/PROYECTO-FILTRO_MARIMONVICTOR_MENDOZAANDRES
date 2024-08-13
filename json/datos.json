@@ -1,5 +1,32 @@
 {
-    "vinilos":{
-        "diomedez": []
-    }
+    "vinilos":[
+        {"artista_1": ["/imagenes/disco-pop.webp", "imagen de disco pop", "Disco vinilo - Shakira", "250.000"]},
+        {"artista_2": ["/imagenes/disco-bachata.webp", "imagen de disco bachata", "Disco vinilo - Romeo Santos", "150.000"]},
+        {"artista_3": ["/imagenes/disco-vallenato.webp", "imagen de disco vallenato", "Disco vinilo doble - Kaleth Morales", "172.000"]},
+        {"artista_4": ["/imagenes/disco-salsa-2.webp", "imagen de disco salsa", "Disco vinilo - Llegando Al 100% - Grupo Niche", "119.900"]},
+        {"artista_5": ["/imagenes/disco-cumbia.webp", "imagen de disco pop", "Disco vinilo - Cumbias Clasicas", "98.000"]},
+        {"artista_6": ["/imagenes/disco-salsa.webp", "imagen de disco salsa", "Disco Lp - Viva la Salsa Volumen 2", "42.000"]},
+        {"artista_7": ["/imagenes/disco-pop-2.webp", "imagen de disco pop", "Disco vinilo - Juanes - La vida es un ratico", "259.420"]},
+        {"artista_8": ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "115.000"]}
+    ],
+    "colecciones":[
+        {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
+        {"colección_2":["/imagenes/michael-jackson.jpg", "imagen de michael jackson", "Michael Jackson", "4 vinilos"]},
+        {"colección_3":["/imagenes/shakira-2.jpg", "imagen de shakira", "Shakira", "3 vinilos"]},
+        {"colección_4":["/imagenes/diomedez-diaz.jpg", "imagen de diomedez diaz", "Diomedez Diaz", "6 vinilos"]},
+        {"colección_5":["/imagenes/joe-arroyo.jpg", "imagen del joe arroyo", "Joe Arroyo", "4 vinilos"]}
+    ],
+    "tiendas":[
+        {"tienda_1": ["/imagenes/cafe-vinilo.webp", "logo de cafe vinilo (empresa)", "Café Vinilo", "Cali, Colombia"]},
+        {"tienda_2": ["/imagenes/almacenes-la-musica.jpg", "logo de almacenes la musica (empresa)", "Almacenes la Musica", "Bogotá, Colombia"]},
+        {"tienda_3": ["/imagenes/audiofilo-store.PNG", "logo de audiofilo store (empresa)", "Audiofilo Store", "Bogotá, Colombia"]},
+        {"tienda_4": ["/imagenes/rpm-records.jpg", "logo de rpm records (empresa)", "RPM Records", "Bogotá, Colombia"]},
+        {"tienda_5": ["/imagenes/codiscos.jpg", "logo de codiscos (empresa)", "Codiscos", "Bogotá, Colombia"]}
+    ],
+    "etiquetas":[
+        {"etiqueta_1":["/imagenes/premium-2.jpg", "logo premium", "Vinilos Premium"]},
+        {"etiqueta_1":["/imagenes/nuevo.PNG", "logo nuevo", "Vinilos Nuevos"]},
+        {"etiqueta_1":["/imagenes/edicion-limitada.jpg", "logo edicion limitada", "Vinilos Edición Limitada"]},
+        {"etiqueta_1":["/imagenes/usados.jpg", "logo usados", "Vinilos Usados"]}
+    ]
 }
