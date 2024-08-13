@@ -119,12 +119,17 @@ a:active  {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Mostrar el mensaje solo en pantallas con ancho mayor a 500px */
-@media screen and (min-width: 500px) {
-    .mensaje_nodisponible {
-        display: block; /* Mostrar el mensaje cuando se cumple la condición */
+/*Diseños y estilos de tablets*/
+
+@media screen and (min-width: 500px){
+    .navegación{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    .mensaje_nodisponible--imagen{
-        height: 70vh;
-    }
+}
+
+/*Diseños y estilos de computadoras*/
+
+@media screen and (min-width: 640px){
+    
 }

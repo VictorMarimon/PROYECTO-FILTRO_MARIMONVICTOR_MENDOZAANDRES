@@ -286,13 +286,3 @@ a:active  {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Mostrar el mensaje solo en pantallas con ancho mayor a 500px */
-@media screen and (min-width: 500px) {
-    .mensaje_nodisponible {
-        display: block; /* Mostrar el mensaje cuando se cumple la condición */
-    }
-    .mensaje_nodisponible--imagen{
-        height: 70vh;
-    }
-}
