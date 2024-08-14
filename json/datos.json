@@ -9,6 +9,16 @@
         {"artista_7": ["/imagenes/disco-pop-2.webp", "imagen de disco pop", "Disco vinilo - Juanes - La vida es un ratico", "259.420"]},
         {"artista_8": ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "115.000"]}
     ],
+    "vinilosModal":[
+        {"artista_1": ["Vinilo estrenado en 1998", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_2": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_3": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_4": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_5": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_6": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_7": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
+        {"artista_8": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]}
+    ],
     "colecciones":[
         {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
         {"colección_2":["/imagenes/michael-jackson.jpg", "imagen de michael jackson", "Michael Jackson", "4 vinilos"]},
