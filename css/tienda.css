@@ -47,7 +47,7 @@ body{
 }
 
 .busqueda__imagen{
-    width: 7vw;
+    width: 40px;
 }
 
 .busqueda__imagen--opciones{
@@ -75,6 +75,12 @@ body{
 
 .navegación__enlace--activado{
     font-weight: 1000;
+}
+
+.navegación__lista {
+    width: 35px;
+    border: inset;
+    border-radius: 6px;
 }
 
 .cabecera,

@@ -61,7 +61,7 @@ body{
 }
 
 .busqueda__imagen{
-    width: 7vw;
+    width: 40px;
 }
 
 .busqueda__imagen--opciones{
@@ -69,6 +69,12 @@ body{
     border: solid 1px;
     border-color: var(--color--opaco);
     border-radius: 7px;
+}
+
+.busqueda__lista{
+    width: 35px;
+    border: inset;
+    border-radius: 6px;
 }
 
 .contenido{
@@ -285,4 +291,61 @@ a:active  {
     max-width: 90%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Diseños y estilos de tablets*/
+
+@media screen and (min-width: 500px){
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 90vw;
+        margin: 0 5vw;
+
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .contenido__seccion{
+        width: 45vw;
+    }
+
+    .contenido__seccion--imagen {
+        width: 28vw;
+        height: 22vh;
+    }
+}
+
+/*Diseños y estilos para resolución de pc*/
+
+@media screen and (min-width: 640px){
+    .contenido__seccion--imagen {
+        width: 28vw;
+        height: 23vh;
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    .contenido{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contenido__seccion{
+        width: 30vw;
+    }
+
+    .contenido__seccion--imagen {
+        width: 18vw;
+        height: 22vh;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contenido__seccion--imagen {
+        width: 20vw;
+        height: 26vh;
+    }
 }

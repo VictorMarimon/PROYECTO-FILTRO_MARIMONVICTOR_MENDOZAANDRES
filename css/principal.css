@@ -87,6 +87,12 @@ body{
     font-weight: 1000;
 }
 
+.navegación__lista {
+    width: 35px;
+    border: inset;
+    border-radius: 6px;
+}
+
 .contenido{
     display: grid;
     grid-template-columns: auto auto ;
