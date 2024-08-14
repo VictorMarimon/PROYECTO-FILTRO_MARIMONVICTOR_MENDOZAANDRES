@@ -11,13 +11,13 @@
     ],
     "vinilosModal":[
         {"artista_1": ["Vinilo estrenado en 1998", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_2": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_3": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_4": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_5": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_6": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_7": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]},
-        {"artista_8": ["Vinilo estrenado en 1999", "/imagenes/shakira.webp", "imagen de shakira"]}
+        {"artista_2": ["Vinilo estrenado en 1999", "/imagenes/disco-bachata.webp", "imagen de shakira"]},
+        {"artista_3": ["Vinilo estrenado en 1991", "/imagenes/disco-vallenato.webp", "imagen de shakira"]},
+        {"artista_4": ["Vinilo estrenado en 1992", "/imagenes/disco-salsa-2.webp", "imagen de shakira"]},
+        {"artista_5": ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de shakira"]},
+        {"artista_6": ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de shakira"]},
+        {"artista_7": ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de shakira"]},
+        {"artista_8": ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de shakira"]}
     ],
     "colecciones":[
         {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
