@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
                 conteniPagPrincipal.appendChild(viniloNuevo);
 
-                artista = "artista_"
-
                 //Dinamismo del modal (principal.html)
 
                 const vinilo = document.getElementsByClassName('contenido__sección');
@@ -67,14 +65,36 @@ document.addEventListener('DOMContentLoaded', (e)=>{
                 imagenViniloNuevoModal.addEventListener('click',(e)=>{
 
                     imagenViniloNuevoModal.setAttribute('href', '#modal');
+                    var banderaModal = 0;
 
+
+                    //solucionar los gets de los datos del JSON
+                    //cuando se intenta traer la url del json trae datos undefined
+                    //cuando no se intenta acceder a la url trae un arreglo 
+                    //es raro que sea un arreglo y cuando lo itero no me traiga los datos
                     for (const vinilosModalBD of valor.vinilosModal) {
+                        const datosbases = valor.vinilos[banderaModal];
+
+                        for (const valoressssssss of Array(datosbases)) {
+                            console.log(valoressssssss)
+                        }
+
+                        
+                        banderaModal++;
+                        var artistaModal = artista + banderaModal;
+
                         const modalIndividual = modal.querySelector('div').querySelector('p');
 
-                        modalIndividual.innerText = vinilosModalBD[artista][0]; 
-                        console.log(vinilosModalBD);
+                        console.log("vinilomodal "+ vinilosModalBD[artistaModal][1]);
+                        console.log(artistaModal)
+
+                        
+
+                        
+                        modalIndividual.textContent = vinilosModalBD[artistaModal][0];
                     }
                 })
+                artista = "artista_"
             }
         }
     }, 200);
