@@ -14,14 +14,54 @@ fetch('../json/datos.json').then((res)=>{
     console.error("Hubo un error en el JSON " + res)
 })
 
-setTimeout(()=>{
-    console.log(JSON)
-}, 200);
-
-
-//
+//se agregan los vinilos una vez cargue el documento HTML
 document.addEventListener('DOMContentLoaded', (e)=>{
-    
+    var bandera = 0;
+    var artista = "artista_";
+    setTimeout(()=>{
+        for (const valor of Array(JSON)) {
+            for (const vinilosBD of valor.vinilos) {
+                bandera++;
+                artista = artista + bandera;
+
+                console.log(vinilosBD[artista][0])
+                console.log(vinilosBD[artista][1])
+                console.log(vinilosBD[artista][2])
+                console.log(vinilosBD[artista][3])
+
+                const conteniPagPrincipal = document.getElementById('contenido_principal');
+
+                const viniloNuevo = document.createElement('div');
+                const imagenViniloNuevo = document.createElement('img');
+                const descripcionViniloNuevo = document.createElement('p');
+                const precioViniloNuevo = document.createElement('label');
+                const signoViniloNuevo = document.createElement('span');
+
+                viniloNuevo.classList.add('contenido__sección');
+                
+                imagenViniloNuevo.classList.add('contenido__sección__imagen');
+                imagenViniloNuevo.setAttribute('src', vinilosBD[artista][0]);
+                imagenViniloNuevo.setAttribute('alt', vinilosBD[artista][1]);
+
+                descripcionViniloNuevo.classList.add('contenido__sección__descripción');
+                descripcionViniloNuevo.innerText = vinilosBD[artista][2];
+
+                signoViniloNuevo.classList.add('contenido__sección--peso');
+                signoViniloNuevo.innerText = '$';
+
+                precioViniloNuevo.appendChild(signoViniloNuevo);
+                precioViniloNuevo.innerText = vinilosBD[artista][3];
+
+                viniloNuevo.append(imagenViniloNuevo);
+                viniloNuevo.append(descripcionViniloNuevo);
+                viniloNuevo.append(precioViniloNuevo);
+
+                conteniPagPrincipal.appendChild(viniloNuevo);
+
+                artista = "artista_"
+            }
+        }
+    }, 200);
     
 
 });
