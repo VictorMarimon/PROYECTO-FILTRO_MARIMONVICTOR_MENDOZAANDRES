@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', (e)=>{
                 bandera++;
                 artista = artista + bandera;
 
+                //cuando se carga el html de la página se crean los vinilos del sitio web uno por uno
+
                 const conteniPagPrincipal = document.getElementById('contenido_principal');
 
                 const viniloNuevo = document.createElement('div');
@@ -58,72 +60,95 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
                 //Dinamismo del modal (principal.html)
 
-                const vinilo = document.getElementsByClassName('contenido__sección');
                 const modal = document.getElementById('modal');
 
+                //aca cuando se clickee sobre la imágen el modal se creara para cada uno de los vinilos
 
                 imagenViniloNuevoModal.addEventListener('click',(e)=>{
 
                     imagenViniloNuevoModal.setAttribute('href', '#modal');
-                    var banderaModal = 0;
 
                     const modalIndividual = modal.querySelector('div').querySelector('p');
-                    console.log(valor.vinilosModal[1].artista_2[1])
+                    const imagenIndividual = document.body.querySelector('#modal').querySelector('.modal__contenido').querySelector('.modal__image');
+                    const imagenIndividualNueva = document.createElement('img');
 
-                    console.log(imagenViniloNuevo.getAttribute('src'))
+                    //se pasan los datos del JSON al modal de su respectivo vinilo
 
                     if(valor.vinilosModal[0].artista_1[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
                         modalIndividual.textContent = valor.vinilosModal[0].artista_1[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[0].artista_1[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        modalIndividual.append(imagenIndividualNueva);
                     }else if(valor.vinilosModal[1].artista_2[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
                         modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_3[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_4[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_5[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_6[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_7[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
-                    }else if(valor.vinilosModal[1].artista_8[1] == imagenViniloNuevo.getAttribute('src')){
-                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[1].artista_2[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[1].artista_2[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[2].artista_3[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[2].artista_3[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[2].artista_3[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[2].artista_3[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[3].artista_4[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[3].artista_4[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[3].artista_4[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[3].artista_4[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[4].artista_5[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[4].artista_5[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[4].artista_5[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[4].artista_5[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[5].artista_6[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[5].artista_6[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[5].artista_6[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[5].artista_6[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[6].artista_7[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[6].artista_7[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[6].artista_7[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[6].artista_7[2]);
+                        modalIndividual.append(imagenIndividualNueva);
+                    }else if(valor.vinilosModal[7].artista_8[1] == imagenViniloNuevo.getAttribute('src')){
+                        imagenIndividualNueva.setAttribute('src', valor.vinilosModal[0].artista_1[3]);
+                        imagenIndividualNueva.setAttribute('alt', valor.vinilosModal[0].artista_1[2]);
+                        imagenIndividualNueva.classList.add('modal__perfil--imagen');
+                        modalIndividual.textContent = valor.vinilosModal[7].artista_8[0];
+                        imagenIndividual.setAttribute('src', valor.vinilosModal[7].artista_8[1]);
+                        imagenIndividual.setAttribute('alt', valor.vinilosModal[7].artista_8[2]);
+                        modalIndividual.append(imagenIndividualNueva);
                     }else{
                         console.log("x")
                     }
-
-                    
-
-
-                    //solucionar los gets de los datos del JSON
-                    //cuando se intenta traer la url del json trae datos undefined
-                    //cuando no se intenta acceder a la url trae un arreglo 
-                    //es raro que sea un arreglo y cuando lo itero no me traiga los datos
-                    /*
-                    for (const vinilosModalBD of valor.vinilosModal) {
-                        
-                        banderaModal++;
-                        var artistaModal = artista + banderaModal;
-
-                        const modalIndividual = modal.querySelector('div').querySelector('p');
-
-                        console.log(vinilosModalBD[artistaModal][1])
-                        console.log(valor.vinilos[banderaModal-1].artista_1[0])
-
-                        if(vinilosModalBD[artistaModal][1] == valor.vinilos[banderaModal-1].artista_1[0]){
-                            console.log("xtttttt")
-                            modalIndividual.textContent = vinilosModalBD[artistaModal][0];
-                            break
-                        }else if(vinilosModalBD[artistaModal][1] == valor.vinilos[banderaModal-1].artista_2[0]){
-                            modalIndividual.textContent = vinilosModalBD[artistaModal][0];
-                        }else{
-                            console.log(vinilosModalBD[artistaModal][1])
-                            console.log(valor.vinilos[banderaModal])
-                            console.log("b")
-                            break
-                        }
-                    }*/
                 })
+                //aca se limpia la variable artista porque al ser una variable de tipo string 
+                //lo que pasa es que se agrega de la siguiente manera
+                //artista_1
+                //artista_12
+                //artista_123
+                //se limpia el numero final para evitar un posible error al crear cada vinilo
+
                 artista = "artista_"
             }
         }
