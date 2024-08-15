@@ -67,32 +67,62 @@ document.addEventListener('DOMContentLoaded', (e)=>{
                     imagenViniloNuevoModal.setAttribute('href', '#modal');
                     var banderaModal = 0;
 
+                    const modalIndividual = modal.querySelector('div').querySelector('p');
+                    console.log(valor.vinilosModal[1].artista_2[1])
+
+                    console.log(imagenViniloNuevo.getAttribute('src'))
+
+                    if(valor.vinilosModal[0].artista_1[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[0].artista_1[0];
+                    }else if(valor.vinilosModal[1].artista_2[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_3[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_4[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_5[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_6[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_7[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else if(valor.vinilosModal[1].artista_8[1] == imagenViniloNuevo.getAttribute('src')){
+                        modalIndividual.textContent = valor.vinilosModal[1].artista_2[0];
+                    }else{
+                        console.log("x")
+                    }
+
+                    
+
 
                     //solucionar los gets de los datos del JSON
                     //cuando se intenta traer la url del json trae datos undefined
                     //cuando no se intenta acceder a la url trae un arreglo 
                     //es raro que sea un arreglo y cuando lo itero no me traiga los datos
+                    /*
                     for (const vinilosModalBD of valor.vinilosModal) {
-                        const datosbases = valor.vinilos[banderaModal];
-
-                        for (const valoressssssss of Array(datosbases)) {
-                            console.log(valoressssssss)
-                        }
-
                         
                         banderaModal++;
                         var artistaModal = artista + banderaModal;
 
                         const modalIndividual = modal.querySelector('div').querySelector('p');
 
-                        console.log("vinilomodal "+ vinilosModalBD[artistaModal][1]);
-                        console.log(artistaModal)
+                        console.log(vinilosModalBD[artistaModal][1])
+                        console.log(valor.vinilos[banderaModal-1].artista_1[0])
 
-                        
-
-                        
-                        modalIndividual.textContent = vinilosModalBD[artistaModal][0];
-                    }
+                        if(vinilosModalBD[artistaModal][1] == valor.vinilos[banderaModal-1].artista_1[0]){
+                            console.log("xtttttt")
+                            modalIndividual.textContent = vinilosModalBD[artistaModal][0];
+                            break
+                        }else if(vinilosModalBD[artistaModal][1] == valor.vinilos[banderaModal-1].artista_2[0]){
+                            modalIndividual.textContent = vinilosModalBD[artistaModal][0];
+                        }else{
+                            console.log(vinilosModalBD[artistaModal][1])
+                            console.log(valor.vinilos[banderaModal])
+                            console.log("b")
+                            break
+                        }
+                    }*/
                 })
                 artista = "artista_"
             }
