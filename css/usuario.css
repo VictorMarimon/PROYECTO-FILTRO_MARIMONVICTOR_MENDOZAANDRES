@@ -197,7 +197,7 @@ body{
 .contenido__bottomsheet__objeto__vinilo{
     display: flex;
     align-items: center;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
 }
 
 .contenido__bottomsheet__objeto__vinilo--imagen{
@@ -303,6 +303,7 @@ a:active  {
         justify-items: center;
         width: 90vw;
         margin: 0 5vw;
+        margin-bottom: 10vw;
 
         row-gap: 10px;
         column-gap: 10px;
