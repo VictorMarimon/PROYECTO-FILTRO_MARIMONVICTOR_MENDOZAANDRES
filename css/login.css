@@ -48,7 +48,7 @@ body{
 .contenido__label,
 .contenido__input {
     /*Estilo tamaño (alto, ancho)*/
-    width: 75%;
+    width: 290px;
     height: 4%;
 
     /*Estilos (bordes a los extremos)*/
