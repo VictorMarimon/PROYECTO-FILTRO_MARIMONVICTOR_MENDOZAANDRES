@@ -9,20 +9,20 @@
 </head>
 <body>
     <header class="cabecera">
-        <a class="cabecera__enlace" href="#"><img class="cabecera__imagen" src="/imagenes/shopping-bag.png" alt="imagen de carrito de compras"></a>
-        <a class="cabecera__enlace" href="/html/principal.html">INICIO</a>
+        <a class="cabecera__enlace" href="#carrito"><img class="cabecera__imagen contenido__bottomsheet__objeto--abrir" src="/imagenes/shopping-bag.png" alt="imagen de carrito de compras"></a>
+        <a class="cabecera__enlace" id="inicio">INICIO</a>
         <a class="cabecera__enlace" href="#"><img class="cabecera__imagen" src="/imagenes/search.png" alt="imagen de busqueda"></a>
     </header>
     
     <nav class="navegación">
         <a href="#"><img class="navegación__lista" src="../imagenes/list.png" alt="icono de lista"></a>
-        <a class="navegación__enlace navegación__enlace--activado" href="#">TODO</a>
-        <a class="navegación__enlace" href="#">POP</a>
-        <a class="navegación__enlace" href="#">BACHATA</a>
-        <a class="navegación__enlace" href="#">SALSA</a>
-        <a class="navegación__enlace" href="#">CUMBIA</a>
-        <a class="navegación__enlace" href="#">CLASICA</a>
-        <a class="navegación__enlace" href="#">VALLENATO</a>
+        <a class="navegación__enlace navegación__enlace--activado" id="todo">TODO</a>
+        <a class="navegación__enlace navegación__enlace--pop">POP</a>
+        <a class="navegación__enlace navegación__enlace--bachata">BACHATA</a>
+        <a class="navegación__enlace navegación__enlace--salsa">SALSA</a>
+        <a class="navegación__enlace navegación__enlace--cumbia">CUMBIA</a>
+        <a class="navegación__enlace navegación__enlace--clasica">CLASICA</a>
+        <a class="navegación__enlace navegación__enlace--vallenato">VALLENATO</a>
     </nav>
 
     <main class="contenido" id="contenido_principal">
@@ -30,13 +30,26 @@
             <div class="modal__contenido">
                 <a class="close" href="#">x</a>
                 <img class="modal__image">
-                <img class="modal__logo" src="/imagenes/corazon.png" alt="imagen de corazon">
-                <img class="modal__logo" src="/imagenes/share.webp" alt="imagen de compartir">
-                <img class="modal__logo" src="/imagenes/check.webp" alt="imagen de confirmación">
-                <img class="modal__logo" src="/imagenes/delete.webp" alt="imagen de quitar o eliminar">
+                <img class="modal__logo modal__logo--1" src="/imagenes/corazon.png" alt="imagen de corazon">
+                <img class="modal__logo modal__logo--2" src="/imagenes/share.webp" alt="imagen de compartir">
+                <img class="modal__logo modal__logo--3" src="/imagenes/check.webp" alt="imagen de confirmación">
+                <img class="modal__logo modal__logo--4" src="/imagenes/delete.webp" alt="imagen de quitar o eliminar">
                 <p class="modal__perfil"></p>
             </div>
         </div>
+
+        <div class="contenido__bottomsheet" id="carrito">
+            <div class="contenido__bottomsheet__objeto">
+                <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
+                <h2>CARRITO</h2>
+                <hr>
+                <hr>
+                <h5 id="totalCarrito">TOTAL: 0</h5>
+                <button class="contenido__bottomsheet__objeto--botonCancelar">CANCELAR PEDIDO</button>
+                <button class="contenido__bottomsheet__objeto--pagar">PAGAR</button>
+            </div>
+        </div>
+
     </main>
 
     <footer class="base">
