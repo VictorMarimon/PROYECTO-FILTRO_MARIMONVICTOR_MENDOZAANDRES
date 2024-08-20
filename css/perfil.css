@@ -225,6 +225,15 @@ body{
     color: var(--color--gris--claro);
 }
 
+.contenido__bottomsheet__objeto__datos--boton {
+    cursor: pointer;
+    background-color: forestgreen;
+    font-size: larger;
+    border: unset;
+    border-radius: 6px;
+    padding: 5px;
+}
+
 .contenido__bottomsheet__objeto__seguido--unfollow{
     cursor: pointer;
     border: solid 2px;
@@ -233,7 +242,6 @@ body{
     padding: 5px;
 }
 
-
 .contenido__bottomsheet__objeto__datos--texto{
     display: flex;
     align-items: center;
@@ -241,7 +249,9 @@ body{
     background-color: var(--color--gris--claro);
     border-radius: 10px;
     cursor: pointer;
-    padding-left: 2vw;
+    width: 40vw;
+    margin: 10px;
+    padding: 5px;
 }
 
 .contenido__bottomsheet__objeto__dato--foto{
