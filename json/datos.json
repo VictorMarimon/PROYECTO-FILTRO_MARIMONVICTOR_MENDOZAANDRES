@@ -1,23 +1,23 @@
 {
     "vinilos":[
-        {"artista_1": ["/imagenes/disco-pop.webp", "imagen de disco pop", "Disco vinilo - Shakira", "250.000"]},
-        {"artista_2": ["/imagenes/disco-bachata.webp", "imagen de disco bachata", "Disco vinilo - Romeo Santos", "150.000"]},
-        {"artista_3": ["/imagenes/disco-vallenato.webp", "imagen de disco vallenato", "Disco vinilo doble - Kaleth Morales", "172.000"]},
-        {"artista_4": ["/imagenes/disco-salsa-2.webp", "imagen de disco salsa", "Disco vinilo - Llegando Al 100% - Grupo Niche", "119.900"]},
-        {"artista_5": ["/imagenes/disco-cumbia.webp", "imagen de disco pop", "Disco vinilo - Cumbias Clasicas", "98.000"]},
-        {"artista_6": ["/imagenes/disco-salsa.webp", "imagen de disco salsa", "Disco Lp - Viva la Salsa Volumen 2", "42.000"]},
-        {"artista_7": ["/imagenes/disco-pop-2.webp", "imagen de disco pop", "Disco vinilo - Juanes - La vida es un ratico", "259.420"]},
-        {"artista_8": ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "115.000"]}
+        ["/imagenes/disco-pop.webp", "imagen de disco pop", "Disco vinilo - Shakira", "250000"],
+        ["/imagenes/disco-bachata.webp", "imagen de disco bachata", "Disco vinilo - Romeo Santos", "150000"],
+        ["/imagenes/disco-vallenato.webp", "imagen de disco vallenato", "Disco vinilo doble - Kaleth Morales", "172000"],
+        ["/imagenes/disco-salsa-2.webp", "imagen de disco salsa", "Disco vinilo - Llegando Al 100% - Grupo Niche", "119900"],
+        ["/imagenes/disco-cumbia.webp", "imagen de disco cumbia", "Disco vinilo - Cumbias Clasicas", "98000"],
+        ["/imagenes/disco-salsa.webp", "imagen de disco salsa", "Disco Lp - Viva la Salsa Volumen 2", "42000"],
+        ["/imagenes/disco-pop-2.webp", "imagen de disco pop", "Disco vinilo - Juanes - La vida es un ratico", "259420"],
+        ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "115000"]
     ],
     "vinilosModal":[
-        {"artista_1": ["Vinilo estrenado en 1998", "/imagenes/disco-pop.webp", "imagen de shakira", "/imagenes/shakira.webp"]},
-        {"artista_2": ["Vinilo estrenado en 1999", "/imagenes/disco-bachata.webp", "imagen de romeo", "/imagenes/shakira.webp"]},
-        {"artista_3": ["Vinilo estrenado en 1991", "/imagenes/disco-vallenato.webp", "imagen de kaleth", "/imagenes/shakira.webp"]},
-        {"artista_4": ["Vinilo estrenado en 1992", "/imagenes/disco-salsa-2.webp", "imagen de grupo niche", "/imagenes/shakira.webp"]},
-        {"artista_5": ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de cumbias clasicas", "/imagenes/shakira.webp"]},
-        {"artista_6": ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de salsa", "/imagenes/shakira.webp"]},
-        {"artista_7": ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de juanes", "/imagenes/shakira.webp"]},
-        {"artista_8": ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "/imagenes/shakira.webp"]}
+        ["Vinilo estrenado en 1998", "/imagenes/disco-pop.webp", "imagen de shakira", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1999", "/imagenes/disco-bachata.webp", "imagen de romeo", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1991", "/imagenes/disco-vallenato.webp", "imagen de kaleth", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1992", "/imagenes/disco-salsa-2.webp", "imagen de grupo niche", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de cumbias clasicas", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de salsa", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de juanes", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "/imagenes/shakira.webp"]
     ],
     "colecciones":[
         {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
@@ -38,5 +38,8 @@
         {"etiqueta_1":["/imagenes/nuevo.PNG", "logo nuevo", "Vinilos Nuevos"]},
         {"etiqueta_1":["/imagenes/edicion-limitada.jpg", "logo edicion limitada", "Vinilos Edición Limitada"]},
         {"etiqueta_1":["/imagenes/usados.jpg", "logo usados", "Vinilos Usados"]}
+    ],
+    "usuario":[
+        ["nombre", "url", "nick"]
     ]
 }
