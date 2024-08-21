@@ -809,7 +809,7 @@ botonTodo.addEventListener('click', (e) => {
 
           //se pasan los datos del JSON al modal de su respectivo vinilo
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (
               valor.vinilosModal[i][1] == imagenViniloNuevo.getAttribute("src")
             ) {
