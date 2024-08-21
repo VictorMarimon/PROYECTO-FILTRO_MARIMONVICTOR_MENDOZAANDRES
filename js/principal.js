@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
           //se pasan los datos del JSON al modal de su respectivo vinilo
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (
               valor.vinilosModal[i][1] == imagenViniloNuevo.getAttribute("src")
             ) {
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             viniloEliminado.remove();
           }
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (valor.vinilos[i][1] == category) {
               const viniloCategoria = document.createElement("div");
               const imagenViniloCategoria = document.createElement("img");
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
                 //se pasan los datos del JSON al modal de su respectivo vinilo
 
-                for (let z = 0; z < 9; z++) {
+                for (let z = 0; z < 14; z++) {
                   if (
                     valor.vinilosModal[z][1] ==
                     imagenViniloCategoria.getAttribute("src")
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             etiqueta.classList.remove("navegación__enlace--activado");
           }
           clasicaVinilo.classList.add("navegación__enlace--activado");
-          categoria("imagen de disco clasica");
+          categoria("imagen de disco rock");
         });
 
         vallenatoVinilo.addEventListener("click", (e) => {
@@ -343,7 +343,7 @@ for (const agregar of añadirCarrito) {
     //aca se agregan los datos al HTMl del JSON
 
     for (const valor of Array(JSON)) {
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 14; i++) {
         if (viniloSeleccionado.getAttribute("src") == valor.vinilos[i][0]) {
           productoImagenNuevoCarrito.setAttribute("src", valor.vinilos[i][0]);
           productoImagenNuevoCarrito.setAttribute("alt", valor.vinilos[i][1]);
@@ -519,7 +519,7 @@ botonInicio.addEventListener('click', (e) => {
 
           //se pasan los datos del JSON al modal de su respectivo vinilo
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (
               valor.vinilosModal[i][1] == imagenViniloNuevo.getAttribute("src")
             ) {
@@ -575,7 +575,7 @@ botonInicio.addEventListener('click', (e) => {
             viniloEliminado.remove();
           }
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (valor.vinilos[i][1] == category) {
               const viniloCategoria = document.createElement("div");
               const imagenViniloCategoria = document.createElement("img");
@@ -625,7 +625,7 @@ botonInicio.addEventListener('click', (e) => {
 
                 //se pasan los datos del JSON al modal de su respectivo vinilo
 
-                for (let z = 0; z < 9; z++) {
+                for (let z = 0; z < 14; z++) {
                   if (
                     valor.vinilosModal[z][1] ==
                     imagenViniloCategoria.getAttribute("src")
@@ -865,7 +865,7 @@ botonTodo.addEventListener('click', (e) => {
             viniloEliminado.remove();
           }
 
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 14; i++) {
             if (valor.vinilos[i][1] == category) {
               const viniloCategoria = document.createElement("div");
               const imagenViniloCategoria = document.createElement("img");
@@ -915,7 +915,7 @@ botonTodo.addEventListener('click', (e) => {
 
                 //se pasan los datos del JSON al modal de su respectivo vinilo
 
-                for (let z = 0; z < 9; z++) {
+                for (let z = 0; z < 14; z++) {
                   if (
                     valor.vinilosModal[z][1] ==
                     imagenViniloCategoria.getAttribute("src")
