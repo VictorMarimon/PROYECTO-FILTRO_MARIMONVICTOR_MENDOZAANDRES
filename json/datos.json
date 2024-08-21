@@ -61,7 +61,7 @@
         ["Pop","0", "/imagenes/imagen-pop.jpg", "imagen de vinilo alucivo al pop"]
     ],
     "compras-realizadas": [
-
+        ["id","nombre","cantidad", "precio"]
     ],
     "usuario":[
         ["nombre", "url", "nick"]
