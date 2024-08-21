@@ -7,7 +7,13 @@
         ["/imagenes/disco-cumbia.webp", "imagen de disco cumbia", "Disco vinilo - Cumbias Clasicas", "98000"],
         ["/imagenes/disco-salsa.webp", "imagen de disco salsa", "Disco Lp - Viva la Salsa Volumen 2", "42000"],
         ["/imagenes/disco-pop-2.webp", "imagen de disco pop", "Disco vinilo - Juanes - La vida es un ratico", "259420"],
-        ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "115000"]
+        ["/imagenes/disco-vallenato-2.webp", "imagen de disco vallenato", "Disco LP - Diomedes Diaz y Juancho Rois", "215000"],
+        ["/imagenes/rolling-stones.webp", "imagen de disco rock", "Disco vinilo - Rolling Stones - Heart Love", "100000"],
+        ["/imagenes/vinilo-beatles.jpg", "imagen de disco rock", "Disco vinilo - The Beatles – Abbey Road", "150000"],
+        ["/imagenes/vinilo-nirvana.webp", "imagen de disco rock", "Disco vinilo - Nirvana – Nevermind", "380000"],
+        ["/imagenes/vinilo-queen.webp", "imagen de disco rock", "Disco vinilo - Queen – A Night At The Opera", "220000"],
+        ["/imagenes/vinilo leppard.webp", "imagen de disco rock", "Disco vinilo - Def Leppard – The Story So Far", "90000"],
+        ["/imagenes/vinilo-queen-2.webp", "imagen de disco rock", "Disco vinilo - Queen – A Kind Of Magic", "137000"]
     ],
     "vinilosModal":[
         ["Vinilo estrenado en 1998", "/imagenes/disco-pop.webp", "imagen de shakira", "/imagenes/shakira.webp"],
@@ -17,7 +23,13 @@
         ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de cumbias clasicas", "/imagenes/shakira.webp"],
         ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de salsa", "/imagenes/shakira.webp"],
         ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de juanes", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "/imagenes/shakira.webp"]
+        ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 2021", "/imagenes/rolling-stones.webp", "imagen de rolling stones", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1969", "/imagenes/vinilo-beatles.jpg", "imagen de the beatles", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1991", "/imagenes/vinilo-nirvana.webp", "imagen de nirvana", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1975", "/imagenes/vinilo-queen.webp", "imagen de queen", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 2018", "/imagenes/vinilo leppard.webp", "imagen de def leppard", "/imagenes/shakira.webp"],
+        ["Vinilo estrenado en 1986", "/imagenes/vinilo-queen-2.webp", "imagen de queen", "/imagenes/shakira.webp"]
     ],
     "colecciones":[
         {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
@@ -38,6 +50,18 @@
         {"etiqueta_1":["/imagenes/nuevo.PNG", "logo nuevo", "Vinilos Nuevos"]},
         {"etiqueta_1":["/imagenes/edicion-limitada.jpg", "logo edicion limitada", "Vinilos Edición Limitada"]},
         {"etiqueta_1":["/imagenes/usados.jpg", "logo usados", "Vinilos Usados"]}
+    ],
+    "sección_compras":[
+        ["Rock","0", "/imagenes/imagen-rock.jpg", "imagen de vinilo alucivo al rock"],
+        ["Salsa","0", "/imagenes/imagen-salsa.jpg", "imagen de vinilo alucivo a la salsa"],
+        ["Bachata","0", "/imagenes/imagen-bachata.jpg", "imagen de vinilo alucivo a la bachata"],
+        ["Merengue","0", "/imagenes/imagen-merengue.webp", "imagen de vinilo alucivo al merengue"],
+        ["Cumbia","0", "/imagenes/imagen-cumbia.jpg", "imagen de vinilo alucivo a la cumbia"],
+        ["Vallenato","0", "/imagenes/imagen-vallenato.jpg", "imagen de vinilo alucivo al vallenato"],
+        ["Pop","0", "/imagenes/imagen-pop.jpg", "imagen de vinilo alucivo al pop"]
+    ],
+    "compras-realizadas": [
+
     ],
     "usuario":[
         ["nombre", "url", "nick"]
