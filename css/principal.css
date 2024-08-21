@@ -27,6 +27,10 @@ body{
     font-family: 'heyWow';
 }
 
+#cantidad{
+    color: orangered;
+}
+
 .cabecera{
     padding-top: 1vh;
 }
