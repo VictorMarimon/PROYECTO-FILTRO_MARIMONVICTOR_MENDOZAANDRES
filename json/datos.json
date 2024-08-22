@@ -60,7 +60,7 @@
         ["Vallenato","0", "/imagenes/imagen-vallenato.jpg", "imagen de vinilo alucivo al vallenato"],
         ["Pop","0", "/imagenes/imagen-pop.jpg", "imagen de vinilo alucivo al pop"]
     ],
-    "compras-realizadas": [
+    "compras_realizadas": [
         ["id","nombre","cantidad", "precio"]
     ],
     "usuario":[
