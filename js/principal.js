@@ -299,6 +299,23 @@ document.addEventListener("DOMContentLoaded", (e) => {
         //se limpia el numero final para evitar un posible error al crear cada vinilo
         artista = "artista_";
       }
+      const busqueda = document.querySelector('.busqueda__texto');
+      var palabraBuscada = [];
+      var palabraJSON = [];
+      busqueda.addEventListener('keydown', (tecla)=>{
+        palabraBuscada.push(tecla.key);
+
+        console.log(busqueda.value)
+
+        for(let c= 0; c < valor.vinilos.length; c ++){
+          palabraJSON.push(valor.vinilos[c][2])
+          if(busqueda.value == valor.vinilos[c][2]){
+            console.log(busqueda.value);
+          } 
+        }
+
+        
+      })
     }
   }, 200);
 });
