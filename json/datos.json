@@ -17,19 +17,19 @@
     ],
     "vinilosModal":[
         ["Vinilo estrenado en 1998", "/imagenes/disco-pop.webp", "imagen de shakira", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1999", "/imagenes/disco-bachata.webp", "imagen de romeo", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1991", "/imagenes/disco-vallenato.webp", "imagen de kaleth", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1992", "/imagenes/disco-salsa-2.webp", "imagen de grupo niche", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de cumbias clasicas", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de salsa", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de juanes", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 2021", "/imagenes/rolling-stones.webp", "imagen de rolling stones", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1969", "/imagenes/vinilo-beatles.jpg", "imagen de the beatles", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1991", "/imagenes/vinilo-nirvana.webp", "imagen de nirvana", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1975", "/imagenes/vinilo-queen.webp", "imagen de queen", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 2018", "/imagenes/vinilo leppard.webp", "imagen de def leppard", "/imagenes/shakira.webp"],
-        ["Vinilo estrenado en 1986", "/imagenes/vinilo-queen-2.webp", "imagen de queen", "/imagenes/shakira.webp"]
+        ["Vinilo estrenado en 1999", "/imagenes/disco-bachata.webp", "imagen de romeo", "https://akamai.sscdn.co/uploadfile/letras/fotos/c/6/6/9/c669aab00d9176e58c9abc790555386e.jpg"],
+        ["Vinilo estrenado en 1991", "/imagenes/disco-vallenato.webp", "imagen de kaleth", "https://yt3.googleusercontent.com/yiSqIyTFRZhQrNOakKL_ZX2X9cKp7VTqw9GwsAEJ6aXdrWPBv6Ga9gF0nQyHMFEyyr4N0_7T2bI=s900-c-k-c0x00ffffff-no-rj"],
+        ["Vinilo estrenado en 1992", "/imagenes/disco-salsa-2.webp", "imagen de grupo niche", "https://elcomercio.pe/resizer/Qf2hlo38M5SE_r3MbldRN6SsoGY=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/R3X6CUU72BC4ZBQDX2PBF72MCQ.jpg"],
+        ["Vinilo estrenado en 1993", "/imagenes/disco-cumbia.webp", "imagen de cumbias clasicas", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTVyakm-aPicDG5wPIUpQHKVZOWDgourZyQ&s"],
+        ["Vinilo estrenado en 1994", "/imagenes/disco-salsa.webp", "imagen de salsa", "https://play-lh.googleusercontent.com/IELnWTlnM7jl14-vjJx5oOa9KF7MCn5eSXZWqlu7SBpUWHgdpoe6LuuN6OqpqaN0GgM"],
+        ["Vinilo estrenado en 1995", "/imagenes/disco-pop-2.webp", "imagen de juanes", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPp6GSyHvysoTmN3wfkCmaRdVtjyjcjDpSA&s"],
+        ["Vinilo estrenado en 1996", "/imagenes/disco-vallenato-2.webp", "imagen de diomedez diaz", "https://lh3.googleusercontent.com/O0s8f7-DtspXKtSbDPPlb4iJpoYKUB6uxXozlRW27dhbdkg2r4geiSGTgXrnUd1LgVMOhbE2JwsKrmW-=w544-h544-p-l90-rj"],
+        ["Vinilo estrenado en 2021", "/imagenes/rolling-stones.webp", "imagen de rolling stones", "https://cdn.britannica.com/41/197341-050-4859B808/The-Rolling-Stones-Bill-Wyman-Keith-Richards-1964.jpg"],
+        ["Vinilo estrenado en 1969", "/imagenes/vinilo-beatles.jpg", "imagen de the beatles", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg"],
+        ["Vinilo estrenado en 1991", "/imagenes/vinilo-nirvana.webp", "imagen de nirvana", "https://i0.wp.com/plus.cusica.com/wp-content/uploads/2017/11/nirvana-a-cusica-plus.jpg?fit=1600%2C1200&ssl=1"],
+        ["Vinilo estrenado en 1975", "/imagenes/vinilo-queen.webp", "imagen de queen", "https://www.thesun.co.uk/wp-content/uploads/2022/11/members-brian-roger-taylor-freddie-555539482.jpg?w=620"],
+        ["Vinilo estrenado en 2018", "/imagenes/vinilo leppard.webp", "imagen de def leppard", "https://akamai.sscdn.co/uploadfile/letras/fotos/8/c/1/9/8c19603643f1b1a9f12f81cf2a39c497.jpg"],
+        ["Vinilo estrenado en 1986", "/imagenes/vinilo-queen-2.webp", "imagen de queen", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88Y-O11gRB9zFofou6me2TrGzJR4IY91gyA&s"]
     ],
     "colecciones":[
         {"colección_1":["/imagenes/rolling-stones.webp", "logo de rolling stones", "Rolling Stones", "7 vinilos"]},
@@ -64,6 +64,6 @@
         ["id","nombre","cantidad", "precio"]
     ],
     "usuario":[
-        ["nombre", "url", "nick"]
+        ["Elon Musk", "https://cdn.urbantecno.com/urbantecno/s/2023-01-05-11-27-elon-musk.png", "@elons1to"]
     ]
 }
