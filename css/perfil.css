@@ -303,3 +303,15 @@ a:active  {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (min-width: 575px){
+    body{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        display: none;
+    }
+}

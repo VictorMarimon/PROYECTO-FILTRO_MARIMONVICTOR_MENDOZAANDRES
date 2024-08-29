@@ -121,6 +121,18 @@ a:active  {
 
 /*Diseños y estilos de tablets*/
 
+@media screen and (min-width: 575px){
+    body{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 500px){
     .navegación{
         flex-direction: row;
