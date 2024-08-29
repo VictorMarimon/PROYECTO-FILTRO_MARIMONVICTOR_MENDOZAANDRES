@@ -13,9 +13,14 @@
         <a class="cabecera__enlace" id="inicio">INICIO</a>
         <a class="cabecera__enlace" href="#"><img class="cabecera__imagen" src="/imagenes/search.png" alt="imagen de busqueda"></a>
     </header>
+
+
+    <section class="busqueda">
+        <input type="text" class="busqueda__texto" placeholder="BUSCAR">
+        <a href="#"><img class="busqueda__imagen busqueda__imagen--opciones" src="/imagenes/opciones.png" alt="imagen de opciones"></a>
+    </section>
     
     <nav class="navegación">
-        <a href="#"><img class="navegación__lista" src="../imagenes/list.png" alt="icono de lista"></a>
         <a class="navegación__enlace navegación__enlace--activado navegación__enlace--todo" id="todo">TODO</a>
         <a class="navegación__enlace navegación__enlace--pop">POP</a>
         <a class="navegación__enlace navegación__enlace--bachata">BACHATA</a>
@@ -32,7 +37,7 @@
                 <img class="modal__image">
                 <img class="modal__logo modal__logo--1" src="/imagenes/corazon.png" alt="imagen de corazon">
                 <img class="modal__logo modal__logo--2" src="/imagenes/share.webp" alt="imagen de compartir">
-                <img class="modal__logo modal__logo--3" src="/imagenes/check.webp" alt="imagen de confirmación">
+                <img class="modal__logo modal__logo--3" src="/imagenes/plus.png" alt="imagen de agregar">
                 <img class="modal__logo modal__logo--4" src="/imagenes/delete.webp" alt="imagen de quitar o eliminar">
                 <p class="modal__perfil"></p>
             </div>
@@ -43,6 +48,7 @@
                 <a href="#" class="contenido__bottomsheet__objeto--cerrar">X</a>
                 <h2>CARRITO</h2>
                 <hr>
+                <br>
                 <hr>
                 <h5 id="totalCarrito">TOTAL: 0</h5>
                 <button class="contenido__bottomsheet__objeto--botonCancelar">CANCELAR PEDIDO</button>
