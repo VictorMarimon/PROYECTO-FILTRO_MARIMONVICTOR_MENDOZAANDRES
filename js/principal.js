@@ -686,44 +686,29 @@ botonTodo.addEventListener('click', (e) => {
   }, 200);
 });
 
-//la siguiente función nos permite enviar los datos nuevos al JSON
-
-function enviarDatos(x) {
-  fetch("../json/datos.json", {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json', },
-    body: JSON.stringify(x),
-  }).then((response) => {
-    response.json()
-  }).then((dato) => {
-    console.log('Se enviaron los datos' + dato);
-  }).catch((err) => {
-    console.log('Hubo un error al enviar los datos ' + err)
-  });
-}
-
 //en esta parte agrego el dinamismo al botón de pagar productos
 
 const botonPagar = document.querySelector('.contenido__bottomsheet__objeto--pagar');
 
 botonPagar.addEventListener('click', () => {
   const productosVendidos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
+  
+  //venta va a almacenar cada compra con cada vinilo
+  var venta = [];
+  var banderaVenta = 0;
 
+  // aca en venta.push se agrega cada vinilo y banderaVenta se refiere a la cantidad de vinilos seleccionados, más no 
+  // a la cantidad total de vinilos comprados
+  // esto con el fin de agregar ese dato a la llave de cada compra en el localStorage
   for (const elementoProductoVendido of productosVendidos) {
-    console.log(elementoProductoVendido.querySelector('p'));
+    venta.push(elementoProductoVendido.querySelector('p').innerText);
+    banderaVenta++;
   }
+  
+  //aca se agregan los datos de los vinilos al local storage para tener la persistencia de datos
+  localStorage.setItem(banderaVenta + 'venta' + venta[0], JSON.stringify(venta));
 
-  var banderaJS = 0;
-  for (const datosJSON of Array(JSONdatos.compras_realizadas)) {
-    //datosJSON.push(["hola"])
-    console.log(datosJSON);
-    JSON.stringify(JSONdatos);
-    enviarDatos(datosJSON);
-
-
-    banderaJS++;
-  }
-
+  
   //aca elimino los productos una vez se haya obtenido los datos de cada uno
 
   var vinilos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
@@ -735,4 +720,8 @@ botonPagar.addEventListener('click', () => {
       totalPrecio.innerText = "TOTAL: 0";
     }
   }
+
+  // aca el array venta se coloca en vacio para que cuando se realice otra compra
+  // los datos de la siguiente compra no sean iguales a las de la anterior
+  venta = [];
 });
