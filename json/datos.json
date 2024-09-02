@@ -52,13 +52,12 @@
         {"etiqueta_1":["/imagenes/usados.jpg", "logo usados", "Vinilos Usados"]}
     ],
     "sección_compras":[
-        ["Rock","0", "/imagenes/imagen-rock.jpg", "imagen de vinilo alucivo al rock"],
-        ["Salsa","0", "/imagenes/imagen-salsa.jpg", "imagen de vinilo alucivo a la salsa"],
-        ["Bachata","0", "/imagenes/imagen-bachata.jpg", "imagen de vinilo alucivo a la bachata"],
-        ["Merengue","0", "/imagenes/imagen-merengue.webp", "imagen de vinilo alucivo al merengue"],
-        ["Cumbia","0", "/imagenes/imagen-cumbia.jpg", "imagen de vinilo alucivo a la cumbia"],
-        ["Vallenato","0", "/imagenes/imagen-vallenato.jpg", "imagen de vinilo alucivo al vallenato"],
-        ["Pop","0", "/imagenes/imagen-pop.jpg", "imagen de vinilo alucivo al pop"]
+        ["Rock","0", "/imagenes/imagen-rock.jpg", "imagen de disco rock"],
+        ["Salsa","0", "/imagenes/imagen-salsa.jpg", "imagen de disco salsa"],
+        ["Bachata","0", "/imagenes/imagen-bachata.jpg", "imagen de disco bachata"],
+        ["Cumbia","0", "/imagenes/imagen-cumbia.jpg", "imagen de disco cumbia"],
+        ["Vallenato","0", "/imagenes/imagen-vallenato.jpg", "imagen de disco vallenato"],
+        ["Pop","0", "/imagenes/imagen-pop.jpg", "imagen de disco pop"]
     ],
     "compras_realizadas": [
         ["id","nombre","cantidad", "precio"]
