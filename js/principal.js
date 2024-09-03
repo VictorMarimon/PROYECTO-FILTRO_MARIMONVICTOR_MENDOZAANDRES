@@ -30,6 +30,42 @@ document.addEventListener("DOMContentLoaded", (e) => {
           "contenido_principal"
         );
 
+        //funcionalidad de filtrado
+
+        const inputBusqueda = document.getElementById('busqueda');
+
+        inputBusqueda.addEventListener('keydown', (tecla) =>{
+
+          viniloNuevo.remove();
+
+          //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
+          //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
+
+          //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
+
+          if(inputBusqueda.value.length != 0){
+            if(vinilosBD[2].includes(inputBusqueda.value)){
+
+              viniloNuevo.innerHTML = `
+              <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+              <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
+              <label>$ ${vinilosBD[3]}</label>
+              
+              `;
+  
+              conteniPagPrincipal.appendChild(viniloNuevo);
+
+
+              //aca falta que cuando el input este vacio, que la pagina vuelva y se recargue
+              if(inputBusqueda.value.length == 0){
+                setTimeout(() => {
+                  window.location.reload();
+                }, 200);
+              }
+            }
+          }
+        })
+
         const viniloNuevo = document.createElement("div");
         const imagenViniloNuevo = document.createElement("img");
         const descripcionViniloNuevo = document.createElement("p");
@@ -217,7 +253,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
             }
           }
         }
-
         popVinilo.addEventListener("click", (e) => {
           //en esta parte quitamos el resaltado de las categorias
           const nav = document.getElementsByClassName(
@@ -302,20 +337,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
       const busqueda = document.querySelector('.busqueda__texto');
       var palabraBuscada = [];
       var palabraJSON = [];
-      busqueda.addEventListener('keydown', (tecla)=>{
+      busqueda.addEventListener('keydown', (tecla) => {
         palabraBuscada.push(tecla.key);
 
         console.log(busqueda.value)
 
-        for(let c= 0; c < valor.vinilos.length; c ++){
+        for (let c = 0; c < valor.vinilos.length; c++) {
           palabraJSON.push(valor.vinilos[c][2])
-          if(busqueda.value == valor.vinilos[c][2]){
+          if (busqueda.value == valor.vinilos[c][2]) {
             console.log(busqueda.value);
-          } 
+          }
         }
-
-        
-      })
+      }
+      )
     }
   }, 200);
 });
@@ -692,7 +726,7 @@ const botonPagar = document.querySelector('.contenido__bottomsheet__objeto--paga
 
 botonPagar.addEventListener('click', () => {
   const productosVendidos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
-  
+
   //venta va a almacenar cada compra con cada vinilo
   var venta = [];
   var banderaVenta = 0;
@@ -704,11 +738,11 @@ botonPagar.addEventListener('click', () => {
     venta.push(elementoProductoVendido.querySelector('p').innerText);
     banderaVenta++;
   }
-  
+
   //aca se agregan los datos de los vinilos al local storage para tener la persistencia de datos
   localStorage.setItem(banderaVenta + 'venta' + venta[0], JSON.stringify(venta));
 
-  
+
   //aca elimino los productos una vez se haya obtenido los datos de cada uno
 
   var vinilos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
