@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         const inputBusqueda = document.getElementById("busqueda");
 
-        inputBusqueda.addEventListener("keydown", (tecla) => {
+        inputBusqueda.addEventListener("input", (tecla) => {
           viniloNuevo.remove();
 
           //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
@@ -43,24 +43,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
           if (inputBusqueda.value.length != 0) {
             if (vinilosBD[2].includes(inputBusqueda.value)) {
               viniloNuevo.innerHTML = `
-              <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+              <a href="#modal"><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
               <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
               <label>$ ${vinilosBD[3]}</label>
-              
               `;
 
               conteniPagPrincipal.appendChild(viniloNuevo);
-              console.log(tecla);
+              
 
-              //esta validación es mejor hacerla con el .target intentar traer los datos que contienee
-              //el input y si no dejarlo asi, igualmente la busqueda funciona solo que puede tener bugs
-              //a largo plazo cuando se realicen diferentes busquedas dentro del sitio web
-
-              if (inputBusqueda.value == " ") {
-                setTimeout(() => {
-                  window.location.reload();
-                }, 100);
-              }
+              //aca faltaria traer la información de los vinilos para agregarlos al modal
+              //y con esto finalizaria la funcionalidad de busqueda en las diferentes páginas del sitio web
             }
           }
         });
@@ -512,32 +504,18 @@ botonInicio.addEventListener("click", (e) => {
 
         const inputBusqueda = document.getElementById("busqueda");
 
-        inputBusqueda.addEventListener("keydown", (tecla) => {
+        inputBusqueda.addEventListener("input", (tecla) => {
           viniloNuevo.remove();
-
-          //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
-          //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
-
-          //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
 
           if (inputBusqueda.value.length != 0) {
             if (vinilosBD[2].includes(inputBusqueda.value)) {
               viniloNuevo.innerHTML = `
-                      <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
-                      <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
-                      <label>$ ${vinilosBD[3]}</label>
-                      
-                      `;
+              <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+              <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
+              <label>$ ${vinilosBD[3]}</label>
+              `;
 
               conteniPagPrincipal.appendChild(viniloNuevo);
-              console.log(inputBusqueda.value);
-
-              //aca falta que cuando el input este vacio, que la pagina vuelva y se recargue
-              if (inputBusqueda.value == " ") {
-                setTimeout(() => {
-                  window.location.reload();
-                }, 100);
-              }
             }
           }
         });
@@ -655,7 +633,7 @@ botonTodo.addEventListener("click", (e) => {
 
         const inputBusqueda = document.getElementById("busqueda");
 
-        inputBusqueda.addEventListener("keydown", (tecla) => {
+        inputBusqueda.addEventListener("input", (tecla) => {
           viniloNuevo.remove();
 
           //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
@@ -666,20 +644,12 @@ botonTodo.addEventListener("click", (e) => {
           if (inputBusqueda.value.length != 0) {
             if (vinilosBD[2].includes(inputBusqueda.value)) {
               viniloNuevo.innerHTML = `
-                      <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
-                      <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
-                      <label>$ ${vinilosBD[3]}</label>
-                      
-                      `;
+              <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+              <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
+              <label>$ ${vinilosBD[3]}</label>
+              `;
 
               conteniPagPrincipal.appendChild(viniloNuevo);
-              console.log(inputBusqueda.value);
-
-              if (inputBusqueda.value == " ") {
-                setTimeout(() => {
-                  window.location.reload();
-                }, 100);
-              }
             }
           }
         });
