@@ -17,8 +17,6 @@ fetch("../json/datos.json")
     console.error("Hubo un error en el JSON " + res);
   });
 
-
-
 //se agregan los vinilos una vez cargue el documento HTML
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
@@ -32,10 +30,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         //funcionalidad de filtrado
 
-        const inputBusqueda = document.getElementById('busqueda');
+        const inputBusqueda = document.getElementById("busqueda");
 
-        inputBusqueda.addEventListener('keydown', (tecla) =>{
-
+        inputBusqueda.addEventListener("keydown", (tecla) => {
           viniloNuevo.remove();
 
           //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
@@ -43,28 +40,30 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
           //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
 
-          if(inputBusqueda.value.length != 0){
-            if(vinilosBD[2].includes(inputBusqueda.value)){
-
+          if (inputBusqueda.value.length != 0) {
+            if (vinilosBD[2].includes(inputBusqueda.value)) {
               viniloNuevo.innerHTML = `
               <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
               <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
               <label>$ ${vinilosBD[3]}</label>
               
               `;
-  
+
               conteniPagPrincipal.appendChild(viniloNuevo);
+              console.log(tecla);
 
+              //esta validación es mejor hacerla con el .target intentar traer los datos que contienee
+              //el input y si no dejarlo asi, igualmente la busqueda funciona solo que puede tener bugs
+              //a largo plazo cuando se realicen diferentes busquedas dentro del sitio web
 
-              //aca falta que cuando el input este vacio, que la pagina vuelva y se recargue
-              if(inputBusqueda.value.length == 0){
+              if (inputBusqueda.value == " ") {
                 setTimeout(() => {
                   window.location.reload();
-                }, 200);
+                }, 100);
               }
             }
           }
-        })
+        });
 
         const viniloNuevo = document.createElement("div");
         const imagenViniloNuevo = document.createElement("img");
@@ -334,22 +333,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         //se limpia el numero final para evitar un posible error al crear cada vinilo
         artista = "artista_";
       }
-      const busqueda = document.querySelector('.busqueda__texto');
-      var palabraBuscada = [];
-      var palabraJSON = [];
-      busqueda.addEventListener('keydown', (tecla) => {
-        palabraBuscada.push(tecla.key);
-
-        console.log(busqueda.value)
-
-        for (let c = 0; c < valor.vinilos.length; c++) {
-          palabraJSON.push(valor.vinilos[c][2])
-          if (busqueda.value == valor.vinilos[c][2]) {
-            console.log(busqueda.value);
-          }
-        }
-      }
-      )
     }
   }, 200);
 });
@@ -424,7 +407,7 @@ for (const agregar of añadirCarrito) {
     total =
       total +
       Number(productoPrecioNuevoCarrito.innerText) *
-      Number(productoCantidadNuevoCarrito.innerText);
+        Number(productoCantidadNuevoCarrito.innerText);
 
     //la variable se refiere más que todo a los vinilos que se agregaban y se duplicaban
     //ya que eso no debe pasar, solo debe aumentar la cantidad y no deben duplicarse los vinilos
@@ -463,13 +446,14 @@ for (const agregar of añadirCarrito) {
       quitar.addEventListener("click", () => {
         for (const viniloEliminado of viniloParaEliminar) {
           if (
-            viniloEliminado.getAttribute("id") == productoNuevoCarrito.getAttribute("id")
+            viniloEliminado.getAttribute("id") ==
+            productoNuevoCarrito.getAttribute("id")
           ) {
             viniloEliminado.remove();
             total =
               total -
               Number(productoPrecioNuevoCarrito.innerText) *
-              Number(productoCantidadNuevoCarrito.innerText);
+                Number(productoCantidadNuevoCarrito.innerText);
             productoCarritoPrecio.innerText = "TOTAL: " + total;
             banderaProductoEliminado++;
             break;
@@ -482,12 +466,15 @@ for (const agregar of añadirCarrito) {
   });
 }
 
+const botonCancelarPedido = document.querySelector(
+  ".contenido__bottomsheet__objeto--botonCancelar"
+);
 
-const botonCancelarPedido = document.querySelector('.contenido__bottomsheet__objeto--botonCancelar');
-
-botonCancelarPedido.addEventListener('click', () => {
-  var vinilos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
-  var totalPrecio = document.getElementById('totalCarrito');
+botonCancelarPedido.addEventListener("click", () => {
+  var vinilos = document.getElementsByClassName(
+    "contenido__bottomsheet__objeto__vinilo"
+  );
+  var totalPrecio = document.getElementById("totalCarrito");
 
   for (let i in vinilos) {
     for (const viniloEliminado of vinilos) {
@@ -495,7 +482,6 @@ botonCancelarPedido.addEventListener('click', () => {
       totalPrecio.innerText = "TOTAL: 0";
     }
   }
-
 });
 
 //en esta parte lo que hago es borrar el contenido de la página (vinilos)
@@ -504,13 +490,13 @@ botonCancelarPedido.addEventListener('click', () => {
 //porque si en el html le coloco el atributo href="index.html"
 //la página se actualiza, peroooo los datos del carrito se eliminan, eso quiere decir que tambien se actualizan
 //entonces con estas lineas de codigo en el boton TODO e INICIO evito que los vinilos del carrito se eliminen
-const botonInicio = document.getElementById('inicio');
-var vinilosPagina = document.getElementsByClassName('contenido__sección');
+const botonInicio = document.getElementById("inicio");
+var vinilosPagina = document.getElementsByClassName("contenido__sección");
 
-botonInicio.addEventListener('click', (e) => {
+botonInicio.addEventListener("click", (e) => {
   for (let x in vinilosPagina) {
     for (let viniloPaginaEliminado of vinilosPagina) {
-      viniloPaginaEliminado.remove()
+      viniloPaginaEliminado.remove();
     }
   }
   setTimeout(() => {
@@ -521,6 +507,40 @@ botonInicio.addEventListener('click', (e) => {
         const conteniPagPrincipal = document.getElementById(
           "contenido_principal"
         );
+
+        //funcionalidad de filtrado
+
+        const inputBusqueda = document.getElementById("busqueda");
+
+        inputBusqueda.addEventListener("keydown", (tecla) => {
+          viniloNuevo.remove();
+
+          //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
+          //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
+
+          //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
+
+          if (inputBusqueda.value.length != 0) {
+            if (vinilosBD[2].includes(inputBusqueda.value)) {
+              viniloNuevo.innerHTML = `
+                      <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+                      <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
+                      <label>$ ${vinilosBD[3]}</label>
+                      
+                      `;
+
+              conteniPagPrincipal.appendChild(viniloNuevo);
+              console.log(inputBusqueda.value);
+
+              //aca falta que cuando el input este vacio, que la pagina vuelva y se recargue
+              if (inputBusqueda.value == " ") {
+                setTimeout(() => {
+                  window.location.reload();
+                }, 100);
+              }
+            }
+          }
+        });
 
         const viniloNuevo = document.createElement("div");
         const imagenViniloNuevo = document.createElement("img");
@@ -604,26 +624,23 @@ botonInicio.addEventListener('click', (e) => {
   }, 200);
 });
 
-const botonTodo = document.getElementById('todo');
+const botonTodo = document.getElementById("todo");
 
-botonTodo.addEventListener('click', (e) => {
+botonTodo.addEventListener("click", (e) => {
   for (let x in vinilosPagina) {
     for (let viniloPaginaEliminado of vinilosPagina) {
-      viniloPaginaEliminado.remove()
+      viniloPaginaEliminado.remove();
     }
   }
 
-  const elementoTODO = document.querySelector('.navegación__enlace--todo');
-  const nav = document.getElementsByClassName(
-    "navegación__enlace--activado"
-  );
+  const elementoTODO = document.querySelector(".navegación__enlace--todo");
+  const nav = document.getElementsByClassName("navegación__enlace--activado");
 
   for (const etiqueta of nav) {
     etiqueta.classList.remove("navegación__enlace--activado");
   }
 
-  elementoTODO.classList.add('navegación__enlace--activado');
-
+  elementoTODO.classList.add("navegación__enlace--activado");
 
   setTimeout(() => {
     for (const valor of Array(JSONdatos)) {
@@ -633,6 +650,39 @@ botonTodo.addEventListener('click', (e) => {
         const conteniPagPrincipal = document.getElementById(
           "contenido_principal"
         );
+
+        //funcionalidad de filtrado
+
+        const inputBusqueda = document.getElementById("busqueda");
+
+        inputBusqueda.addEventListener("keydown", (tecla) => {
+          viniloNuevo.remove();
+
+          //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
+          //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
+
+          //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
+
+          if (inputBusqueda.value.length != 0) {
+            if (vinilosBD[2].includes(inputBusqueda.value)) {
+              viniloNuevo.innerHTML = `
+                      <a><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
+                      <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
+                      <label>$ ${vinilosBD[3]}</label>
+                      
+                      `;
+
+              conteniPagPrincipal.appendChild(viniloNuevo);
+              console.log(inputBusqueda.value);
+
+              if (inputBusqueda.value == " ") {
+                setTimeout(() => {
+                  window.location.reload();
+                }, 100);
+              }
+            }
+          }
+        });
 
         const viniloNuevo = document.createElement("div");
         const imagenViniloNuevo = document.createElement("img");
@@ -703,10 +753,7 @@ botonTodo.addEventListener('click', (e) => {
             }
           }
         });
-
-
       }
-
 
       //aca se limpia la variable artista porque al ser una variable de tipo string
       //lo que pasa es que se agrega de la siguiente manera
@@ -715,38 +762,45 @@ botonTodo.addEventListener('click', (e) => {
       //artista_123
       //se limpia el numero final para evitar un posible error al crear cada vinilo
       artista = "artista_";
-
     }
   }, 200);
 });
 
 //en esta parte agrego el dinamismo al botón de pagar productos
 
-const botonPagar = document.querySelector('.contenido__bottomsheet__objeto--pagar');
+const botonPagar = document.querySelector(
+  ".contenido__bottomsheet__objeto--pagar"
+);
 
-botonPagar.addEventListener('click', () => {
-  const productosVendidos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
+botonPagar.addEventListener("click", () => {
+  const productosVendidos = document.getElementsByClassName(
+    "contenido__bottomsheet__objeto__vinilo"
+  );
 
   //venta va a almacenar cada compra con cada vinilo
   var venta = [];
   var banderaVenta = 0;
 
-  // aca en venta.push se agrega cada vinilo y banderaVenta se refiere a la cantidad de vinilos seleccionados, más no 
+  // aca en venta.push se agrega cada vinilo y banderaVenta se refiere a la cantidad de vinilos seleccionados, más no
   // a la cantidad total de vinilos comprados
   // esto con el fin de agregar ese dato a la llave de cada compra en el localStorage
   for (const elementoProductoVendido of productosVendidos) {
-    venta.push(elementoProductoVendido.querySelector('p').innerText);
+    venta.push(elementoProductoVendido.querySelector("p").innerText);
     banderaVenta++;
   }
 
   //aca se agregan los datos de los vinilos al local storage para tener la persistencia de datos
-  localStorage.setItem(banderaVenta + 'venta' + venta[0], JSON.stringify(venta));
-
+  localStorage.setItem(
+    banderaVenta + "venta" + venta[0],
+    JSON.stringify(venta)
+  );
 
   //aca elimino los productos una vez se haya obtenido los datos de cada uno
 
-  var vinilos = document.getElementsByClassName('contenido__bottomsheet__objeto__vinilo');
-  var totalPrecio = document.getElementById('totalCarrito');
+  var vinilos = document.getElementsByClassName(
+    "contenido__bottomsheet__objeto__vinilo"
+  );
+  var totalPrecio = document.getElementById("totalCarrito");
 
   for (let i in vinilos) {
     for (const viniloEliminado of vinilos) {
