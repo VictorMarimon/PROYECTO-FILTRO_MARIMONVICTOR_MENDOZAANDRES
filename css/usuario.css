@@ -105,6 +105,12 @@ body{
     height: 20vh;
 }
 
+.contenido__seccion--imagenSearch{
+    border-radius: 20px;
+    width: 100px;
+}
+
+
 .contenido__seccion--cantidad{
     color: var(--color--gris);
 }
