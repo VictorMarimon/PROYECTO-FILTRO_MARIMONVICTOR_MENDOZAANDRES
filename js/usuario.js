@@ -32,6 +32,31 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
               const contenidoPrincipal = document.querySelector('.contenido');
 
+
+              //funcionalidad de filtrado
+
+              const inputBusqueda = document.getElementById("busqueda");
+
+              inputBusqueda.addEventListener("input", (tecla) => {
+                contenidoSeccion.remove();
+
+                //aca con datosVinilos[2] trae el nombre de los vinilos del JSON
+                //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
+
+                //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los datosVinilos[2]
+
+                if (inputBusqueda.value.length != 0) {
+                  if (datosVinilos[2].includes(inputBusqueda.value)) {
+                    contenidoSeccion.innerHTML = `
+                    <p class="contenido__seccion--titulo">${datosVinilos[2]}<br><span class="contenido__seccion--cantidad"></span></p>
+                    <a class="contenido__bottomsheet__objeto--abrir"><img class="contenido__seccion--imagen" src="${datosVinilos[0]}" alt="${datosVinilos[1]}"></a>
+                    `;
+
+                    contenidoPrincipal.appendChild(contenidoSeccion);
+                  }
+                }
+              });
+
               const contenidoSeccion =  document.createElement('div');
               const contenidoSeccionTitulo = document.createElement('p');
               const contenidoSeccionTituloVinilo = document.createElement('span');
