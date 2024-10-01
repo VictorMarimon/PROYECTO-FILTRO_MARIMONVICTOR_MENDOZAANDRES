@@ -770,6 +770,7 @@ botonPagar.addEventListener("click", () => {
   var vinilos = document.getElementsByClassName(
     "contenido__bottomsheet__objeto__vinilo"
   );
+
   var totalPrecio = document.getElementById("totalCarrito");
 
   for (let i in vinilos) {
@@ -778,8 +779,61 @@ botonPagar.addEventListener("click", () => {
       totalPrecio.innerText = "TOTAL: 0";
     }
   }
+  mostrarAlertaCompraExitosa()
+
+  //aca falta cerrar el botoomsheet
 
   // aca el array venta se coloca en vacio para que cuando se realice otra compra
   // los datos de la siguiente compra no sean iguales a las de la anterior
   venta = [];
 });
+
+function mostrarAlertaCompraExitosa() {
+  // Crear el modal y su contenido
+  const modal = document.createElement("div");
+  modal.style.display = "flex";
+  modal.style.position = "fixed";
+  modal.style.zIndex = "1";
+  modal.style.left = "0";
+  modal.style.top = "0";
+  modal.style.width = "100%";
+  modal.style.height = "100%";
+  modal.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
+
+  const modalContent = document.createElement("div");
+  modalContent.style.backgroundColor = "#fefefe";
+  modalContent.style.padding = "20px";
+  modalContent.style.border = "1px solid #888";
+  modalContent.style.borderRadius = "5px";
+  modalContent.style.textAlign = "center";
+  modalContent.style.width = "80%";
+  modalContent.style.maxWidth = "500px";
+
+  const closeButton = document.createElement("span");
+  closeButton.innerHTML = "&times;";
+  closeButton.style.color = "#aaa";
+  closeButton.style.float = "right";
+  closeButton.style.fontSize = "28px";
+  closeButton.style.fontWeight = "bold";
+  closeButton.style.cursor = "pointer";
+  closeButton.onclick = function() {
+      document.body.removeChild(modal);
+  };
+
+  const title = document.createElement("h2");
+  title.textContent = "¡Compra realizada con éxito!";
+
+  const message = document.createElement("p");
+  message.textContent = "Gracias por su compra. Recibirá un correo de confirmación pronto.";
+
+
+  // Agregar todo al modal
+  modalContent.appendChild(closeButton);
+  modalContent.appendChild(title);
+  modalContent.appendChild(message);
+  modal.appendChild(modalContent);
+  document.body.appendChild(modal);
+}
+
