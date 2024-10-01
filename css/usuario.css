@@ -39,6 +39,8 @@ body{
 
 .titulo__pagina{
     margin: 1vh 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .busqueda{
@@ -49,7 +51,7 @@ body{
 
 .busqueda__texto{
     display: flex;
-    width: 60vw;
+    width: 70vw;
     height: 4vh;
     color: var(--color--gris);
     background-color: var(--color--opaco);
