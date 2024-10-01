@@ -35,6 +35,12 @@ body{
     padding-top: 1vh;
 }
 
+.cabecera__enlace{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
 .cabecera,
 .base{
     /*Estilos cabecera-base*/

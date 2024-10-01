@@ -65,6 +65,13 @@ body{
     height: 10%;
 }
 
+.cabecera h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
 .base__imagen{
     /*Tamaño de los iconos*/
     height: 40px;
