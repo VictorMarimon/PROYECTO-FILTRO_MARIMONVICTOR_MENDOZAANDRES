@@ -264,6 +264,10 @@ body{
     border-radius: 10px;
     padding: 8px;
     color: var(--color--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 100px;
 }
 
 /* Mostrar bottom sheet cuando es el objetivo */
