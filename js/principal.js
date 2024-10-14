@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         const inputBusqueda = document.getElementById("busqueda");
 
         inputBusqueda.addEventListener("input", (tecla) => {
-          viniloNuevo.remove();
 
           //aca con vinilosBD[2] trae el nombre de los vinilos del JSON
           //y inputBUsqueda.value trae el dato que ingresan en el input de busqueda
@@ -41,18 +40,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
           //y el método includes permite validar o verificar si el dato del input ingresado se encuentra en los vinilosBD[2]
 
           if (inputBusqueda.value.length != 0) {
+            viniloNuevo.remove();
             if (vinilosBD[2].includes(inputBusqueda.value)) {
               viniloNuevo.innerHTML = `
               <a href="#modal"><img class="contenido__sección__imagen" src="${vinilosBD[0]}" alt="${vinilosBD[1]}"></a>
               <p class="contenido__sección__descripción">${vinilosBD[2]}</p>
               <label>$ ${vinilosBD[3]}</label>
               `;
-
               conteniPagPrincipal.appendChild(viniloNuevo);
-              
-
-              //aca faltaria traer la información de los vinilos para agregarlos al modal
-              //y con esto finalizaria la funcionalidad de busqueda en las diferentes páginas del sitio web
             }
           }
         });
@@ -454,6 +449,14 @@ for (const agregar of añadirCarrito) {
       });
       break;
     }
+
+    const alertaAgregarVinilo = document.querySelector('.modal__alerta');
+    alertaAgregarVinilo.classList.remove('desaparecer');
+
+    setTimeout(() => {
+      alertaAgregarVinilo.classList.add('desaparecer');
+    }, 1000);
+
     cantidadVinilo = 1;
   });
 }
@@ -779,9 +782,10 @@ botonPagar.addEventListener("click", () => {
       totalPrecio.innerText = "TOTAL: 0";
     }
   }
-  mostrarAlertaCompraExitosa()
 
-  //aca falta cerrar el botoomsheet
+  if(venta.length != 0){
+    mostrarAlertaCompraExitosa()
+  }
 
   // aca el array venta se coloca en vacio para que cuando se realice otra compra
   // los datos de la siguiente compra no sean iguales a las de la anterior
